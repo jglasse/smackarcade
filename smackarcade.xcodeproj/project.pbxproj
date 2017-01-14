@@ -19,8 +19,6 @@
 		E1BAF2681E298B1B00DFF3AD /* newshipsound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DB61B13E32A00C31F27 /* newshipsound.m4a */; };
 		E1BAF2691E298B3E00DFF3AD /* crashsound2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DBA1B13E32A00C31F27 /* crashsound2.m4a */; };
 		E1BAF26A1E298BCE00DFF3AD /* explosion2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DB71B13E32A00C31F27 /* explosion2.m4a */; };
-		E1BAF26D1E29A2A600DFF3AD /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BAF26C1E29A2A600DFF3AD /* MainMenuScene.swift */; };
-		E1BAF2711E29A74400DFF3AD /* SKButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BAF2701E29A74400DFF3AD /* SKButtonNode.swift */; };
 		E1BE326517D0B6B1008265BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BE326417D0B6B1008265BE /* Foundation.framework */; };
 		E1BE326717D0B6B1008265BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BE326617D0B6B1008265BE /* CoreGraphics.framework */; };
 		E1BE326917D0B6B1008265BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BE326817D0B6B1008265BE /* UIKit.framework */; };
@@ -278,8 +276,6 @@
 		FCD64EA11B13EDD900C31F27 /* diz.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64EA01B13EDD800C31F27 /* diz.m4a */; };
 		FCD64EA21B13EDD900C31F27 /* diz.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64EA01B13EDD800C31F27 /* diz.m4a */; };
 		FCDBBE8C1960993700714EBA /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCDBBE8B1960993700714EBA /* GameController.framework */; };
-		FCDBBE8F1960AB4400714EBA /* JCRGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDBBE8E1960AB4400714EBA /* JCRGameController.m */; };
-		FCDBBE921960ACF400714EBA /* JCRGameControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDBBE911960ACF400714EBA /* JCRGameControllerManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1272,16 +1268,12 @@
 				FC0B312419AFDB3F000BE774 /* SKScrollingNode.m in Sources */,
 				E1BE32A317D0BA31008265BE /* NostalgiaroidsScene.m in Sources */,
 				E1BE32A017D0B796008265BE /* TitleScreenScene.m in Sources */,
-				E1BAF26D1E29A2A600DFF3AD /* MainMenuScene.swift in Sources */,
-				FCDBBE8F1960AB4400714EBA /* JCRGameController.m in Sources */,
 				E1BE327517D0B6B1008265BE /* SmackAppDelegate.m in Sources */,
 				E1A6A3CD192B8F4A00D256AA /* UFO.m in Sources */,
 				FCCC4C371977071A00481D84 /* MoonPatrollerScene.m in Sources */,
 				FCCC4C161975B19F00481D84 /* MainMenuScene.m in Sources */,
 				E1BE327E17D0B6B1008265BE /* SpriteViewController.m in Sources */,
-				E1BAF2711E29A74400DFF3AD /* SKButtonNode.swift in Sources */,
 				E1ED75F51919A6C000FF96F9 /* SKButton.m in Sources */,
-				FCDBBE921960ACF400714EBA /* JCRGameControllerManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1483,7 +1475,6 @@
 		E1BE329A17D0B6B1008265BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpriteWalkthrough.app/SpriteWalkthrough";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1507,7 +1498,6 @@
 		E1BE329B17D0B6B1008265BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpriteWalkthrough.app/SpriteWalkthrough";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

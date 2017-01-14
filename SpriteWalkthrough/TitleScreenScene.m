@@ -74,17 +74,23 @@ static const int screenYOffset = 50;
 
     if (helloNode != nil)
     {
+        NSLog(@"test 1");
         helloNode.name = nil;
         subTitleNode.name = nil;
         directionNode.name= nil;
         SKAction *fadeAway = [SKAction fadeOutWithDuration: 0.55];
         SKAction *remove = [SKAction removeFromParent];
         SKAction *moveSequence = [SKAction sequence:@[fadeAway, remove]];
+        NSLog(@"test 2");
         [directionNode runAction:moveSequence];
         [subTitleNode runAction:moveSequence];
         [helloNode runAction: moveSequence completion:^{
             SKScene *spaceshipScene  = [[NostalgiaroidsScene alloc] initWithSize:self.size];
+            NSLog(@"test 3");
+
             SKTransition *doors = [SKTransition doorsOpenVerticalWithDuration:0.25];
+            NSLog(@"test 4");
+
             [self.view presentScene:spaceshipScene transition:doors];
         }];    }
     

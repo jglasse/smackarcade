@@ -141,19 +141,14 @@ typedef NS_OPTIONS(NSUInteger, AsteroidsCollionsMask) {
     {
         [self createSceneContents];
         self.contentCreated = YES;
-    
     }
 
-
 }
-
-
-
 
 - (void)createSceneContents
 {
     
-     [[JCRGameControllerManager sharedInstance] setDelegate:self];
+   //  [[JCRGameControllerManager sharedInstance] setDelegate:self];
     
     //subscribe to moving to background notifications
     
@@ -165,11 +160,6 @@ typedef NS_OPTIONS(NSUInteger, AsteroidsCollionsMask) {
      object:nil];
     
 //including controller
-    
-    
-   
-    
-    
     
     
     [self setInitialConditions];
@@ -186,7 +176,6 @@ typedef NS_OPTIONS(NSUInteger, AsteroidsCollionsMask) {
     _pausedNode=[self pauseTextNode];
     _pausedNode.alpha=0;
     [self addChild: _pausedNode];
-    
     
     
     
@@ -210,10 +199,6 @@ typedef NS_OPTIONS(NSUInteger, AsteroidsCollionsMask) {
     
     
     
-    
-    
-    
-    
     //add rocks
     _numberOfRocks=4;
     
@@ -230,6 +215,8 @@ typedef NS_OPTIONS(NSUInteger, AsteroidsCollionsMask) {
     [self startBGSound];
     
 }
+
+/*
 
 - (void)gameControllerManager:(JCRGameControllerManager *)manager
       gameControllerConnected:(JCRGameController *)gameController {
@@ -312,7 +299,7 @@ typedef NS_OPTIONS(NSUInteger, AsteroidsCollionsMask) {
     [self showButtons];
 
 }
-
+*/
 
 - (void)__logMessage:(NSString*)message {
     dispatch_async(dispatch_get_main_queue(), ^{
