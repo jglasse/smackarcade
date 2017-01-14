@@ -1,0 +1,1560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E12F41691929175E0054E22E /* explosion.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E12F41681929175E0054E22E /* explosion.atlas */; };
+		E1A6A3CD192B8F4A00D256AA /* UFO.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A6A3CC192B8F4A00D256AA /* UFO.m */; };
+		E1BAF25B1E297F9400DFF3AD /* MPclosebg.png in Resources */ = {isa = PBXBuildFile; fileRef = E1BAF25A1E297F9400DFF3AD /* MPclosebg.png */; };
+		E1BAF2611E297FE800DFF3AD /* floor2.png in Resources */ = {isa = PBXBuildFile; fileRef = E1BAF2601E297FE800DFF3AD /* floor2.png */; };
+		E1BAF2631E298AC900DFF3AD /* Nostalgiaroids.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DB41B13E32A00C31F27 /* Nostalgiaroids.m4a */; };
+		E1BAF2641E298B0400DFF3AD /* pew.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DBC1B13E32A00C31F27 /* pew.m4a */; };
+		E1BAF2651E298B0B00DFF3AD /* controllerdisconnected.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DBE1B13E33B00C31F27 /* controllerdisconnected.m4a */; };
+		E1BAF2661E298B0B00DFF3AD /* controllerconnected.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DBF1B13E33B00C31F27 /* controllerconnected.m4a */; };
+		E1BAF2671E298B1400DFF3AD /* thrust.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DB91B13E32A00C31F27 /* thrust.m4a */; };
+		E1BAF2681E298B1B00DFF3AD /* newshipsound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DB61B13E32A00C31F27 /* newshipsound.m4a */; };
+		E1BAF2691E298B3E00DFF3AD /* crashsound2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DBA1B13E32A00C31F27 /* crashsound2.m4a */; };
+		E1BAF26A1E298BCE00DFF3AD /* explosion2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DB71B13E32A00C31F27 /* explosion2.m4a */; };
+		E1BAF26D1E29A2A600DFF3AD /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BAF26C1E29A2A600DFF3AD /* MainMenuScene.swift */; };
+		E1BAF2711E29A74400DFF3AD /* SKButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BAF2701E29A74400DFF3AD /* SKButtonNode.swift */; };
+		E1BE326517D0B6B1008265BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BE326417D0B6B1008265BE /* Foundation.framework */; };
+		E1BE326717D0B6B1008265BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BE326617D0B6B1008265BE /* CoreGraphics.framework */; };
+		E1BE326917D0B6B1008265BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BE326817D0B6B1008265BE /* UIKit.framework */; };
+		E1BE326F17D0B6B1008265BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1BE326D17D0B6B1008265BE /* InfoPlist.strings */; };
+		E1BE327117D0B6B1008265BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BE327017D0B6B1008265BE /* main.m */; };
+		E1BE327517D0B6B1008265BE /* SmackAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BE327417D0B6B1008265BE /* SmackAppDelegate.m */; };
+		E1BE327E17D0B6B1008265BE /* SpriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BE327D17D0B6B1008265BE /* SpriteViewController.m */; };
+		E1BE328017D0B6B1008265BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1BE327F17D0B6B1008265BE /* Images.xcassets */; };
+		E1BE328817D0B6B1008265BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BE326417D0B6B1008265BE /* Foundation.framework */; };
+		E1BE328917D0B6B1008265BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BE326817D0B6B1008265BE /* UIKit.framework */; };
+		E1BE329117D0B6B1008265BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1BE328F17D0B6B1008265BE /* InfoPlist.strings */; };
+		E1BE329317D0B6B1008265BE /* SmackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BE329217D0B6B1008265BE /* SmackTests.m */; };
+		E1BE329D17D0B6C8008265BE /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BE329C17D0B6C8008265BE /* SpriteKit.framework */; };
+		E1BE32A017D0B796008265BE /* TitleScreenScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BE329F17D0B796008265BE /* TitleScreenScene.m */; };
+		E1BE32A317D0BA31008265BE /* NostalgiaroidsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BE32A217D0BA31008265BE /* NostalgiaroidsScene.m */; };
+		E1ED75F51919A6C000FF96F9 /* SKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E1ED75F41919A6C000FF96F9 /* SKButton.m */; };
+		E1ED75F61919A6C000FF96F9 /* SKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E1ED75F41919A6C000FF96F9 /* SKButton.m */; };
+		FC0B312419AFDB3F000BE774 /* SKScrollingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0B312219AFDB3F000BE774 /* SKScrollingNode.m */; };
+		FC393AF11A2FBAC900DD2A2C /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC393AEF1A2FBAC900DD2A2C /* Main_iPhone.storyboard */; };
+		FC393AF21A2FBAC900DD2A2C /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC393AEF1A2FBAC900DD2A2C /* Main_iPhone.storyboard */; };
+		FCCC4C161975B19F00481D84 /* MainMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC4C151975B19F00481D84 /* MainMenuScene.m */; };
+		FCCC4C371977071A00481D84 /* MoonPatrollerScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC4C361977071A00481D84 /* MoonPatrollerScene.m */; };
+		FCD64D301B13DFDF00C31F27 /* PressStart2P.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D2B1B13DFDF00C31F27 /* PressStart2P.ttf */; };
+		FCD64D311B13DFDF00C31F27 /* PressStart2P.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D2B1B13DFDF00C31F27 /* PressStart2P.ttf */; };
+		FCD64D321B13DFDF00C31F27 /* Robotron.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D2C1B13DFDF00C31F27 /* Robotron.ttf */; };
+		FCD64D331B13DFDF00C31F27 /* Robotron.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D2C1B13DFDF00C31F27 /* Robotron.ttf */; };
+		FCD64D341B13DFDF00C31F27 /* space age.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D2D1B13DFDF00C31F27 /* space age.ttf */; };
+		FCD64D351B13DFDF00C31F27 /* space age.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D2D1B13DFDF00C31F27 /* space age.ttf */; };
+		FCD64D361B13DFDF00C31F27 /* ARCADE_N.TTF in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D2E1B13DFDF00C31F27 /* ARCADE_N.TTF */; };
+		FCD64D371B13DFDF00C31F27 /* ARCADE_N.TTF in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D2E1B13DFDF00C31F27 /* ARCADE_N.TTF */; };
+		FCD64D381B13DFDF00C31F27 /* Hyperspace.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D2F1B13DFDF00C31F27 /* Hyperspace.ttf */; };
+		FCD64D391B13DFDF00C31F27 /* Hyperspace.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D2F1B13DFDF00C31F27 /* Hyperspace.ttf */; };
+		FCD64D3D1B13E0BF00C31F27 /* MPfarbg1.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D3C1B13E0BF00C31F27 /* MPfarbg1.png */; };
+		FCD64D3E1B13E0BF00C31F27 /* MPfarbg1.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D3C1B13E0BF00C31F27 /* MPfarbg1.png */; };
+		FCD64D441B13E16100C31F27 /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D3F1B13E16100C31F27 /* ship.png */; };
+		FCD64D451B13E16100C31F27 /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D3F1B13E16100C31F27 /* ship.png */; };
+		FCD64D461B13E16100C31F27 /* shipThrust1.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D401B13E16100C31F27 /* shipThrust1.png */; };
+		FCD64D471B13E16100C31F27 /* shipThrust1.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D401B13E16100C31F27 /* shipThrust1.png */; };
+		FCD64D481B13E16100C31F27 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D411B13E16100C31F27 /* spark.png */; };
+		FCD64D491B13E16100C31F27 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D411B13E16100C31F27 /* spark.png */; };
+		FCD64D4A1B13E16100C31F27 /* UFO.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D421B13E16100C31F27 /* UFO.png */; };
+		FCD64D4B1B13E16100C31F27 /* UFO.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D421B13E16100C31F27 /* UFO.png */; };
+		FCD64D4C1B13E16100C31F27 /* ExplosionParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D431B13E16100C31F27 /* ExplosionParticle.sks */; };
+		FCD64D4D1B13E16100C31F27 /* ExplosionParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D431B13E16100C31F27 /* ExplosionParticle.sks */; };
+		FCD64D5B1B13E18400C31F27 /* rightPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D4E1B13E18400C31F27 /* rightPressed.png */; };
+		FCD64D5C1B13E18400C31F27 /* rightPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D4E1B13E18400C31F27 /* rightPressed.png */; };
+		FCD64D5D1B13E18400C31F27 /* thrustPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D4F1B13E18400C31F27 /* thrustPressed.png */; };
+		FCD64D5E1B13E18400C31F27 /* thrustPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D4F1B13E18400C31F27 /* thrustPressed.png */; };
+		FCD64D5F1B13E18400C31F27 /* firePressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D501B13E18400C31F27 /* firePressed.png */; };
+		FCD64D601B13E18400C31F27 /* firePressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D501B13E18400C31F27 /* firePressed.png */; };
+		FCD64D611B13E18400C31F27 /* leftPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D511B13E18400C31F27 /* leftPressed.png */; };
+		FCD64D621B13E18400C31F27 /* leftPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D511B13E18400C31F27 /* leftPressed.png */; };
+		FCD64D631B13E18400C31F27 /* pausePressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D521B13E18400C31F27 /* pausePressed.png */; };
+		FCD64D641B13E18400C31F27 /* pausePressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D521B13E18400C31F27 /* pausePressed.png */; };
+		FCD64D651B13E18400C31F27 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D531B13E18400C31F27 /* pause.png */; };
+		FCD64D661B13E18400C31F27 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D531B13E18400C31F27 /* pause.png */; };
+		FCD64D671B13E18400C31F27 /* hyperspace.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D541B13E18400C31F27 /* hyperspace.png */; };
+		FCD64D681B13E18400C31F27 /* hyperspace.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D541B13E18400C31F27 /* hyperspace.png */; };
+		FCD64D691B13E18400C31F27 /* hyperspacePressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D551B13E18400C31F27 /* hyperspacePressed.png */; };
+		FCD64D6A1B13E18400C31F27 /* hyperspacePressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D551B13E18400C31F27 /* hyperspacePressed.png */; };
+		FCD64D6B1B13E18400C31F27 /* restart.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D561B13E18400C31F27 /* restart.png */; };
+		FCD64D6C1B13E18400C31F27 /* restart.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D561B13E18400C31F27 /* restart.png */; };
+		FCD64D6D1B13E18400C31F27 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D571B13E18400C31F27 /* right.png */; };
+		FCD64D6E1B13E18400C31F27 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D571B13E18400C31F27 /* right.png */; };
+		FCD64D6F1B13E18400C31F27 /* thrust.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D581B13E18400C31F27 /* thrust.png */; };
+		FCD64D701B13E18400C31F27 /* thrust.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D581B13E18400C31F27 /* thrust.png */; };
+		FCD64D711B13E18400C31F27 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D591B13E18400C31F27 /* fire.png */; };
+		FCD64D721B13E18400C31F27 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D591B13E18400C31F27 /* fire.png */; };
+		FCD64D731B13E18400C31F27 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D5A1B13E18400C31F27 /* left.png */; };
+		FCD64D741B13E18400C31F27 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D5A1B13E18400C31F27 /* left.png */; };
+		FCD64D841B13E1A500C31F27 /* midrock_5.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D751B13E1A500C31F27 /* midrock_5.png */; };
+		FCD64D851B13E1A500C31F27 /* midrock_5.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D751B13E1A500C31F27 /* midrock_5.png */; };
+		FCD64D861B13E1A500C31F27 /* midrock_1.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D761B13E1A500C31F27 /* midrock_1.png */; };
+		FCD64D871B13E1A500C31F27 /* midrock_1.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D761B13E1A500C31F27 /* midrock_1.png */; };
+		FCD64D881B13E1A500C31F27 /* midrock_3.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D771B13E1A500C31F27 /* midrock_3.png */; };
+		FCD64D891B13E1A500C31F27 /* midrock_3.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D771B13E1A500C31F27 /* midrock_3.png */; };
+		FCD64D8A1B13E1A500C31F27 /* midrock_2.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D781B13E1A500C31F27 /* midrock_2.png */; };
+		FCD64D8B1B13E1A500C31F27 /* midrock_2.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D781B13E1A500C31F27 /* midrock_2.png */; };
+		FCD64D8C1B13E1A500C31F27 /* midrock_4.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D791B13E1A500C31F27 /* midrock_4.png */; };
+		FCD64D8D1B13E1A500C31F27 /* midrock_4.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D791B13E1A500C31F27 /* midrock_4.png */; };
+		FCD64D8E1B13E1A500C31F27 /* bigrock_3.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D7A1B13E1A500C31F27 /* bigrock_3.png */; };
+		FCD64D8F1B13E1A500C31F27 /* bigrock_3.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D7A1B13E1A500C31F27 /* bigrock_3.png */; };
+		FCD64D901B13E1A500C31F27 /* bigrock_5.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D7B1B13E1A500C31F27 /* bigrock_5.png */; };
+		FCD64D911B13E1A500C31F27 /* bigrock_5.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D7B1B13E1A500C31F27 /* bigrock_5.png */; };
+		FCD64D921B13E1A500C31F27 /* bigrock_1.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D7C1B13E1A500C31F27 /* bigrock_1.png */; };
+		FCD64D931B13E1A500C31F27 /* bigrock_1.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D7C1B13E1A500C31F27 /* bigrock_1.png */; };
+		FCD64D941B13E1A500C31F27 /* bigrock_2.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D7D1B13E1A500C31F27 /* bigrock_2.png */; };
+		FCD64D951B13E1A500C31F27 /* bigrock_2.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D7D1B13E1A500C31F27 /* bigrock_2.png */; };
+		FCD64D961B13E1A500C31F27 /* bigrock_4.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D7E1B13E1A500C31F27 /* bigrock_4.png */; };
+		FCD64D971B13E1A500C31F27 /* bigrock_4.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D7E1B13E1A500C31F27 /* bigrock_4.png */; };
+		FCD64D981B13E1A500C31F27 /* smallrock_2.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D7F1B13E1A500C31F27 /* smallrock_2.png */; };
+		FCD64D991B13E1A500C31F27 /* smallrock_2.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D7F1B13E1A500C31F27 /* smallrock_2.png */; };
+		FCD64D9A1B13E1A500C31F27 /* smallrock_1.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D801B13E1A500C31F27 /* smallrock_1.png */; };
+		FCD64D9B1B13E1A500C31F27 /* smallrock_1.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D801B13E1A500C31F27 /* smallrock_1.png */; };
+		FCD64D9C1B13E1A500C31F27 /* smallrock_4.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D811B13E1A500C31F27 /* smallrock_4.png */; };
+		FCD64D9D1B13E1A500C31F27 /* smallrock_4.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D811B13E1A500C31F27 /* smallrock_4.png */; };
+		FCD64D9E1B13E1A500C31F27 /* smallrock_3.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D821B13E1A500C31F27 /* smallrock_3.png */; };
+		FCD64D9F1B13E1A500C31F27 /* smallrock_3.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D821B13E1A500C31F27 /* smallrock_3.png */; };
+		FCD64DA01B13E1A500C31F27 /* smallrock_5.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D831B13E1A500C31F27 /* smallrock_5.png */; };
+		FCD64DA11B13E1A500C31F27 /* smallrock_5.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D831B13E1A500C31F27 /* smallrock_5.png */; };
+		FCD64DA71B13E30400C31F27 /* mainmenutitle.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DA21B13E30400C31F27 /* mainmenutitle.png */; };
+		FCD64DA81B13E30400C31F27 /* mainmenutitle.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DA21B13E30400C31F27 /* mainmenutitle.png */; };
+		FCD64DA91B13E30400C31F27 /* patroller_buttonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DA31B13E30400C31F27 /* patroller_buttonPressed.png */; };
+		FCD64DAA1B13E30400C31F27 /* patroller_buttonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DA31B13E30400C31F27 /* patroller_buttonPressed.png */; };
+		FCD64DAB1B13E30400C31F27 /* patroller_button.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DA41B13E30400C31F27 /* patroller_button.png */; };
+		FCD64DAC1B13E30400C31F27 /* patroller_button.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DA41B13E30400C31F27 /* patroller_button.png */; };
+		FCD64DAD1B13E30400C31F27 /* nostalgiaroids_buttonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DA51B13E30400C31F27 /* nostalgiaroids_buttonPressed.png */; };
+		FCD64DAE1B13E30400C31F27 /* nostalgiaroids_buttonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DA51B13E30400C31F27 /* nostalgiaroids_buttonPressed.png */; };
+		FCD64DAF1B13E30400C31F27 /* nostalgiaroids_button.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DA61B13E30400C31F27 /* nostalgiaroids_button.png */; };
+		FCD64DB01B13E30400C31F27 /* nostalgiaroids_button.png in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DA61B13E30400C31F27 /* nostalgiaroids_button.png */; };
+		FCD64DDA1B13E73200C31F27 /* actualrocks.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DC61B13E73200C31F27 /* actualrocks.m4a */; };
+		FCD64DDB1B13E73200C31F27 /* actualrocks.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DC61B13E73200C31F27 /* actualrocks.m4a */; };
+		FCD64DDC1B13E73200C31F27 /* avoid.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DC71B13E73200C31F27 /* avoid.m4a */; };
+		FCD64DDD1B13E73200C31F27 /* avoid.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DC71B13E73200C31F27 /* avoid.m4a */; };
+		FCD64DDE1B13E73200C31F27 /* boohoo.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DC81B13E73200C31F27 /* boohoo.m4a */; };
+		FCD64DDF1B13E73200C31F27 /* boohoo.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DC81B13E73200C31F27 /* boohoo.m4a */; };
+		FCD64DE01B13E73200C31F27 /* deathmethaphor.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DC91B13E73200C31F27 /* deathmethaphor.m4a */; };
+		FCD64DE11B13E73200C31F27 /* deathmethaphor.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DC91B13E73200C31F27 /* deathmethaphor.m4a */; };
+		FCD64DE21B13E73200C31F27 /* depressing.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DCA1B13E73200C31F27 /* depressing.m4a */; };
+		FCD64DE31B13E73200C31F27 /* depressing.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DCA1B13E73200C31F27 /* depressing.m4a */; };
+		FCD64DE41B13E73200C31F27 /* expensive.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DCB1B13E73200C31F27 /* expensive.m4a */; };
+		FCD64DE51B13E73200C31F27 /* expensive.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DCB1B13E73200C31F27 /* expensive.m4a */; };
+		FCD64DE61B13E73200C31F27 /* gotlame.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DCC1B13E73200C31F27 /* gotlame.m4a */; };
+		FCD64DE71B13E73200C31F27 /* gotlame.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DCC1B13E73200C31F27 /* gotlame.m4a */; };
+		FCD64DE81B13E73200C31F27 /* moron.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DCD1B13E73200C31F27 /* moron.m4a */; };
+		FCD64DE91B13E73200C31F27 /* moron.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DCD1B13E73200C31F27 /* moron.m4a */; };
+		FCD64DEA1B13E73200C31F27 /* outsmarted.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DCE1B13E73200C31F27 /* outsmarted.m4a */; };
+		FCD64DEB1B13E73200C31F27 /* outsmarted.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DCE1B13E73200C31F27 /* outsmarted.m4a */; };
+		FCD64DEC1B13E73200C31F27 /* ow.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DCF1B13E73200C31F27 /* ow.m4a */; };
+		FCD64DED1B13E73200C31F27 /* ow.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DCF1B13E73200C31F27 /* ow.m4a */; };
+		FCD64DEE1B13E73200C31F27 /* pally.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DD01B13E73200C31F27 /* pally.m4a */; };
+		FCD64DEF1B13E73200C31F27 /* pally.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DD01B13E73200C31F27 /* pally.m4a */; };
+		FCD64DF01B13E73200C31F27 /* proud.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DD11B13E73200C31F27 /* proud.m4a */; };
+		FCD64DF11B13E73200C31F27 /* proud.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DD11B13E73200C31F27 /* proud.m4a */; };
+		FCD64DF21B13E73200C31F27 /* putdown.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DD21B13E73200C31F27 /* putdown.m4a */; };
+		FCD64DF31B13E73200C31F27 /* putdown.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DD21B13E73200C31F27 /* putdown.m4a */; };
+		FCD64DF41B13E73200C31F27 /* redshirt.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DD31B13E73200C31F27 /* redshirt.m4a */; };
+		FCD64DF51B13E73200C31F27 /* redshirt.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DD31B13E73200C31F27 /* redshirt.m4a */; };
+		FCD64DF61B13E73200C31F27 /* rockswinning.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DD41B13E73200C31F27 /* rockswinning.m4a */; };
+		FCD64DF71B13E73200C31F27 /* rockswinning.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DD41B13E73200C31F27 /* rockswinning.m4a */; };
+		FCD64DF81B13E73200C31F27 /* shootrocks.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DD51B13E73200C31F27 /* shootrocks.m4a */; };
+		FCD64DF91B13E73200C31F27 /* shootrocks.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DD51B13E73200C31F27 /* shootrocks.m4a */; };
+		FCD64DFA1B13E73200C31F27 /* sister2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DD61B13E73200C31F27 /* sister2.m4a */; };
+		FCD64DFB1B13E73200C31F27 /* sister2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DD61B13E73200C31F27 /* sister2.m4a */; };
+		FCD64DFC1B13E73200C31F27 /* tryingtohit.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DD71B13E73200C31F27 /* tryingtohit.m4a */; };
+		FCD64DFD1B13E73200C31F27 /* tryingtohit.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DD71B13E73200C31F27 /* tryingtohit.m4a */; };
+		FCD64E131B13EA1F00C31F27 /* 12yearolds.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DFE1B13EA1F00C31F27 /* 12yearolds.m4a */; };
+		FCD64E141B13EA1F00C31F27 /* 12yearolds.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DFE1B13EA1F00C31F27 /* 12yearolds.m4a */; };
+		FCD64E151B13EA1F00C31F27 /* 80suck.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DFF1B13EA1F00C31F27 /* 80suck.m4a */; };
+		FCD64E161B13EA1F00C31F27 /* 80suck.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DFF1B13EA1F00C31F27 /* 80suck.m4a */; };
+		FCD64E171B13EA1F00C31F27 /* actualcar.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E001B13EA1F00C31F27 /* actualcar.m4a */; };
+		FCD64E181B13EA1F00C31F27 /* actualcar.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E001B13EA1F00C31F27 /* actualcar.m4a */; };
+		FCD64E191B13EA1F00C31F27 /* cat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E011B13EA1F00C31F27 /* cat.m4a */; };
+		FCD64E1A1B13EA1F00C31F27 /* cat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E011B13EA1F00C31F27 /* cat.m4a */; };
+		FCD64E1B1B13EA1F00C31F27 /* coma.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E021B13EA1F00C31F27 /* coma.m4a */; };
+		FCD64E1C1B13EA1F00C31F27 /* coma.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E021B13EA1F00C31F27 /* coma.m4a */; };
+		FCD64E1D1B13EA1F00C31F27 /* girlfriend.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E031B13EA1F00C31F27 /* girlfriend.m4a */; };
+		FCD64E1E1B13EA1F00C31F27 /* girlfriend.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E031B13EA1F00C31F27 /* girlfriend.m4a */; };
+		FCD64E1F1B13EA1F00C31F27 /* insecurity.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E041B13EA1F00C31F27 /* insecurity.m4a */; };
+		FCD64E201B13EA1F00C31F27 /* insecurity.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E041B13EA1F00C31F27 /* insecurity.m4a */; };
+		FCD64E211B13EA1F00C31F27 /* livingpersonification.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E051B13EA1F00C31F27 /* livingpersonification.m4a */; };
+		FCD64E221B13EA1F00C31F27 /* livingpersonification.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E051B13EA1F00C31F27 /* livingpersonification.m4a */; };
+		FCD64E231B13EA1F00C31F27 /* metaphor.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E061B13EA1F00C31F27 /* metaphor.m4a */; };
+		FCD64E241B13EA1F00C31F27 /* metaphor.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E061B13EA1F00C31F27 /* metaphor.m4a */; };
+		FCD64E251B13EA1F00C31F27 /* middleschool.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E071B13EA1F00C31F27 /* middleschool.m4a */; };
+		FCD64E261B13EA1F00C31F27 /* middleschool.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E071B13EA1F00C31F27 /* middleschool.m4a */; };
+		FCD64E271B13EA1F00C31F27 /* nickleback.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E081B13EA1F00C31F27 /* nickleback.m4a */; };
+		FCD64E281B13EA1F00C31F27 /* nickleback.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E081B13EA1F00C31F27 /* nickleback.m4a */; };
+		FCD64E291B13EA1F00C31F27 /* nohope.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E091B13EA1F00C31F27 /* nohope.m4a */; };
+		FCD64E2A1B13EA1F00C31F27 /* nohope.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E091B13EA1F00C31F27 /* nohope.m4a */; };
+		FCD64E2B1B13EA1F00C31F27 /* nolove.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E0A1B13EA1F00C31F27 /* nolove.m4a */; };
+		FCD64E2C1B13EA1F00C31F27 /* nolove.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E0A1B13EA1F00C31F27 /* nolove.m4a */; };
+		FCD64E2D1B13EA1F00C31F27 /* parents.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E0B1B13EA1F00C31F27 /* parents.m4a */; };
+		FCD64E2E1B13EA1F00C31F27 /* parents.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E0B1B13EA1F00C31F27 /* parents.m4a */; };
+		FCD64E2F1B13EA1F00C31F27 /* playlikeliz.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E0C1B13EA1F00C31F27 /* playlikeliz.m4a */; };
+		FCD64E301B13EA1F00C31F27 /* playlikeliz.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E0C1B13EA1F00C31F27 /* playlikeliz.m4a */; };
+		FCD64E311B13EA1F00C31F27 /* shock.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E0D1B13EA1F00C31F27 /* shock.m4a */; };
+		FCD64E321B13EA1F00C31F27 /* shock.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E0D1B13EA1F00C31F27 /* shock.m4a */; };
+		FCD64E331B13EA1F00C31F27 /* spoiler.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E0E1B13EA1F00C31F27 /* spoiler.m4a */; };
+		FCD64E341B13EA1F00C31F27 /* spoiler.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E0E1B13EA1F00C31F27 /* spoiler.m4a */; };
+		FCD64E351B13EA1F00C31F27 /* suckateverything.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E0F1B13EA1F00C31F27 /* suckateverything.m4a */; };
+		FCD64E361B13EA1F00C31F27 /* suckateverything.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E0F1B13EA1F00C31F27 /* suckateverything.m4a */; };
+		FCD64E371B13EA1F00C31F27 /* terriblyugly.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E101B13EA1F00C31F27 /* terriblyugly.m4a */; };
+		FCD64E381B13EA1F00C31F27 /* terriblyugly.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E101B13EA1F00C31F27 /* terriblyugly.m4a */; };
+		FCD64E391B13EA1F00C31F27 /* thumbs.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E111B13EA1F00C31F27 /* thumbs.m4a */; };
+		FCD64E3A1B13EA1F00C31F27 /* thumbs.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E111B13EA1F00C31F27 /* thumbs.m4a */; };
+		FCD64E3B1B13EA1F00C31F27 /* worstperson.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E121B13EA1F00C31F27 /* worstperson.m4a */; };
+		FCD64E3C1B13EA1F00C31F27 /* worstperson.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E121B13EA1F00C31F27 /* worstperson.m4a */; };
+		FCD64E4D1B13EAD800C31F27 /* awful.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E3D1B13EAD800C31F27 /* awful.m4a */; };
+		FCD64E4E1B13EAD800C31F27 /* awful.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E3D1B13EAD800C31F27 /* awful.m4a */; };
+		FCD64E4F1B13EAD800C31F27 /* better.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E3E1B13EAD800C31F27 /* better.m4a */; };
+		FCD64E501B13EAD800C31F27 /* better.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E3E1B13EAD800C31F27 /* better.m4a */; };
+		FCD64E511B13EAD800C31F27 /* dork.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E3F1B13EAD800C31F27 /* dork.m4a */; };
+		FCD64E521B13EAD800C31F27 /* dork.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E3F1B13EAD800C31F27 /* dork.m4a */; };
+		FCD64E531B13EAD800C31F27 /* embarassing.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E401B13EAD800C31F27 /* embarassing.m4a */; };
+		FCD64E541B13EAD800C31F27 /* embarassing.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E401B13EAD800C31F27 /* embarassing.m4a */; };
+		FCD64E551B13EAD800C31F27 /* greatshot.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E411B13EAD800C31F27 /* greatshot.m4a */; };
+		FCD64E561B13EAD800C31F27 /* greatshot.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E411B13EAD800C31F27 /* greatshot.m4a */; };
+		FCD64E571B13EAD800C31F27 /* incompetent.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E421B13EAD800C31F27 /* incompetent.m4a */; };
+		FCD64E581B13EAD800C31F27 /* incompetent.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E421B13EAD800C31F27 /* incompetent.m4a */; };
+		FCD64E591B13EAD800C31F27 /* lame.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E431B13EAD800C31F27 /* lame.m4a */; };
+		FCD64E5A1B13EAD800C31F27 /* lame.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E431B13EAD800C31F27 /* lame.m4a */; };
+		FCD64E5B1B13EAD800C31F27 /* loser.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E441B13EAD800C31F27 /* loser.m4a */; };
+		FCD64E5C1B13EAD800C31F27 /* loser.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E441B13EAD800C31F27 /* loser.m4a */; };
+		FCD64E5D1B13EAD800C31F27 /* pathetic.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E451B13EAD800C31F27 /* pathetic.m4a */; };
+		FCD64E5E1B13EAD800C31F27 /* pathetic.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E451B13EAD800C31F27 /* pathetic.m4a */; };
+		FCD64E5F1B13EAD800C31F27 /* pitiful.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E461B13EAD800C31F27 /* pitiful.m4a */; };
+		FCD64E601B13EAD800C31F27 /* pitiful.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E461B13EAD800C31F27 /* pitiful.m4a */; };
+		FCD64E611B13EAD800C31F27 /* seriously.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E471B13EAD800C31F27 /* seriously.m4a */; };
+		FCD64E621B13EAD800C31F27 /* seriously.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E471B13EAD800C31F27 /* seriously.m4a */; };
+		FCD64E631B13EAD800C31F27 /* smell.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E481B13EAD800C31F27 /* smell.m4a */; };
+		FCD64E641B13EAD800C31F27 /* smell.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E481B13EAD800C31F27 /* smell.m4a */; };
+		FCD64E651B13EAD800C31F27 /* soeasy.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E491B13EAD800C31F27 /* soeasy.m4a */; };
+		FCD64E661B13EAD800C31F27 /* soeasy.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E491B13EAD800C31F27 /* soeasy.m4a */; };
+		FCD64E671B13EAD800C31F27 /* stupidusmax.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E4A1B13EAD800C31F27 /* stupidusmax.m4a */; };
+		FCD64E681B13EAD800C31F27 /* stupidusmax.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E4A1B13EAD800C31F27 /* stupidusmax.m4a */; };
+		FCD64E691B13EAD800C31F27 /* suckage.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E4B1B13EAD800C31F27 /* suckage.m4a */; };
+		FCD64E6A1B13EAD800C31F27 /* suckage.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E4B1B13EAD800C31F27 /* suckage.m4a */; };
+		FCD64E6B1B13EAD800C31F27 /* whoops.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E4C1B13EAD800C31F27 /* whoops.m4a */; };
+		FCD64E6C1B13EAD800C31F27 /* whoops.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E4C1B13EAD800C31F27 /* whoops.m4a */; };
+		FCD64E751B13EB5F00C31F27 /* cancer.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E6D1B13EB5F00C31F27 /* cancer.m4a */; };
+		FCD64E761B13EB5F00C31F27 /* cancer.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E6D1B13EB5F00C31F27 /* cancer.m4a */; };
+		FCD64E771B13EB5F00C31F27 /* diplomat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E6E1B13EB5F00C31F27 /* diplomat.m4a */; };
+		FCD64E781B13EB5F00C31F27 /* diplomat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E6E1B13EB5F00C31F27 /* diplomat.m4a */; };
+		FCD64E791B13EB5F00C31F27 /* et.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E6F1B13EB5F00C31F27 /* et.m4a */; };
+		FCD64E7A1B13EB5F00C31F27 /* et.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E6F1B13EB5F00C31F27 /* et.m4a */; };
+		FCD64E7B1B13EB5F00C31F27 /* indigenous.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E701B13EB5F00C31F27 /* indigenous.m4a */; };
+		FCD64E7C1B13EB5F00C31F27 /* indigenous.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E701B13EB5F00C31F27 /* indigenous.m4a */; };
+		FCD64E7D1B13EB5F00C31F27 /* klatu.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E711B13EB5F00C31F27 /* klatu.m4a */; };
+		FCD64E7E1B13EB5F00C31F27 /* klatu.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E711B13EB5F00C31F27 /* klatu.m4a */; };
+		FCD64E7F1B13EB5F00C31F27 /* rooting.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E721B13EB5F00C31F27 /* rooting.m4a */; };
+		FCD64E801B13EB5F00C31F27 /* rooting.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E721B13EB5F00C31F27 /* rooting.m4a */; };
+		FCD64E811B13EB5F00C31F27 /* shotface.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E731B13EB5F00C31F27 /* shotface.m4a */; };
+		FCD64E821B13EB5F00C31F27 /* shotface.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E731B13EB5F00C31F27 /* shotface.m4a */; };
+		FCD64E831B13EB5F00C31F27 /* xenophobic.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E741B13EB5F00C31F27 /* xenophobic.m4a */; };
+		FCD64E841B13EB5F00C31F27 /* xenophobic.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E741B13EB5F00C31F27 /* xenophobic.m4a */; };
+		FCD64E8B1B13EBAE00C31F27 /* captgenius.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E851B13EBAE00C31F27 /* captgenius.m4a */; };
+		FCD64E8C1B13EBAE00C31F27 /* captgenius.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E851B13EBAE00C31F27 /* captgenius.m4a */; };
+		FCD64E8D1B13EBAE00C31F27 /* flyinto.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E861B13EBAE00C31F27 /* flyinto.m4a */; };
+		FCD64E8E1B13EBAE00C31F27 /* flyinto.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E861B13EBAE00C31F27 /* flyinto.m4a */; };
+		FCD64E8F1B13EBAE00C31F27 /* force.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E871B13EBAE00C31F27 /* force.m4a */; };
+		FCD64E901B13EBAE00C31F27 /* force.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E871B13EBAE00C31F27 /* force.m4a */; };
+		FCD64E911B13EBAE00C31F27 /* hjerk.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E881B13EBAE00C31F27 /* hjerk.m4a */; };
+		FCD64E921B13EBAE00C31F27 /* hjerk.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E881B13EBAE00C31F27 /* hjerk.m4a */; };
+		FCD64E931B13EBAE00C31F27 /* stupidhumans.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E891B13EBAE00C31F27 /* stupidhumans.m4a */; };
+		FCD64E941B13EBAE00C31F27 /* stupidhumans.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E891B13EBAE00C31F27 /* stupidhumans.m4a */; };
+		FCD64E951B13EBAE00C31F27 /* suck.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E8A1B13EBAE00C31F27 /* suck.m4a */; };
+		FCD64E961B13EBAE00C31F27 /* suck.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E8A1B13EBAE00C31F27 /* suck.m4a */; };
+		FCD64E9A1B13EBBD00C31F27 /* clumsy.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E971B13EBBD00C31F27 /* clumsy.m4a */; };
+		FCD64E9B1B13EBBD00C31F27 /* clumsy.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E971B13EBBD00C31F27 /* clumsy.m4a */; };
+		FCD64E9C1B13EBBD00C31F27 /* insurance.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E981B13EBBD00C31F27 /* insurance.m4a */; };
+		FCD64E9D1B13EBBD00C31F27 /* insurance.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E981B13EBBD00C31F27 /* insurance.m4a */; };
+		FCD64E9E1B13EBBD00C31F27 /* worseatthis.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E991B13EBBD00C31F27 /* worseatthis.m4a */; };
+		FCD64E9F1B13EBBD00C31F27 /* worseatthis.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64E991B13EBBD00C31F27 /* worseatthis.m4a */; };
+		FCD64EA11B13EDD900C31F27 /* diz.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64EA01B13EDD800C31F27 /* diz.m4a */; };
+		FCD64EA21B13EDD900C31F27 /* diz.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64EA01B13EDD800C31F27 /* diz.m4a */; };
+		FCDBBE8C1960993700714EBA /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCDBBE8B1960993700714EBA /* GameController.framework */; };
+		FCDBBE8F1960AB4400714EBA /* JCRGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDBBE8E1960AB4400714EBA /* JCRGameController.m */; };
+		FCDBBE921960ACF400714EBA /* JCRGameControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDBBE911960ACF400714EBA /* JCRGameControllerManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1BE328A17D0B6B1008265BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1BE325917D0B6B1008265BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1BE326017D0B6B1008265BE;
+			remoteInfo = SpriteWalkthrough;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E12F41681929175E0054E22E /* explosion.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = explosion.atlas; path = ../explosion.atlas; sourceTree = "<group>"; };
+		E154A6FB1943AB2200DF9661 /* SKButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKButton.h; path = ../SKButton.h; sourceTree = "<group>"; };
+		E1A6A3CB192B8F4A00D256AA /* UFO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UFO.h; path = ../UFO.h; sourceTree = "<group>"; };
+		E1A6A3CC192B8F4A00D256AA /* UFO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UFO.m; path = ../UFO.m; sourceTree = "<group>"; };
+		E1BAF25A1E297F9400DFF3AD /* MPclosebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPclosebg.png; sourceTree = "<group>"; };
+		E1BAF2601E297FE800DFF3AD /* floor2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = floor2.png; sourceTree = "<group>"; };
+		E1BAF2621E298A3B00DFF3AD /* Smack ArcadeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smack ArcadeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1BAF26B1E29A2A500DFF3AD /* Smack Arcade-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack Arcade-Bridging-Header.h"; sourceTree = "<group>"; };
+		E1BAF26C1E29A2A600DFF3AD /* MainMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
+		E1BAF2701E29A74400DFF3AD /* SKButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKButtonNode.swift; sourceTree = "<group>"; };
+		E1BE326117D0B6B1008265BE /* Smack Arcade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smack Arcade.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1BE326417D0B6B1008265BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E1BE326617D0B6B1008265BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E1BE326817D0B6B1008265BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E1BE326C17D0B6B1008265BE /* Smack Arcade-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Smack Arcade-Info.plist"; sourceTree = "<group>"; };
+		E1BE326E17D0B6B1008265BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E1BE327017D0B6B1008265BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E1BE327317D0B6B1008265BE /* SmackAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmackAppDelegate.h; sourceTree = "<group>"; };
+		E1BE327417D0B6B1008265BE /* SmackAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmackAppDelegate.m; sourceTree = "<group>"; };
+		E1BE327A17D0B6B1008265BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		E1BE327C17D0B6B1008265BE /* SpriteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpriteViewController.h; sourceTree = "<group>"; };
+		E1BE327D17D0B6B1008265BE /* SpriteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteViewController.m; sourceTree = "<group>"; };
+		E1BE327F17D0B6B1008265BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E1BE328E17D0B6B1008265BE /* Smack ArcadeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Smack ArcadeTests-Info.plist"; sourceTree = "<group>"; };
+		E1BE329017D0B6B1008265BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E1BE329217D0B6B1008265BE /* SmackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmackTests.m; sourceTree = "<group>"; };
+		E1BE329C17D0B6C8008265BE /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		E1BE329E17D0B796008265BE /* TitleScreenScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleScreenScene.h; sourceTree = "<group>"; };
+		E1BE329F17D0B796008265BE /* TitleScreenScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleScreenScene.m; sourceTree = "<group>"; };
+		E1BE32A117D0BA31008265BE /* NostalgiaroidsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NostalgiaroidsScene.h; sourceTree = "<group>"; };
+		E1BE32A217D0BA31008265BE /* NostalgiaroidsScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NostalgiaroidsScene.m; sourceTree = "<group>"; };
+		E1ED75F41919A6C000FF96F9 /* SKButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKButton.m; path = ../SKButton.m; sourceTree = "<group>"; };
+		FC0B312219AFDB3F000BE774 /* SKScrollingNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKScrollingNode.m; sourceTree = "<group>"; };
+		FC0B312319AFDB3F000BE774 /* SKScrollingNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKScrollingNode.h; sourceTree = "<group>"; };
+		FC393AF01A2FBAC900DD2A2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		FCCC4C141975B19F00481D84 /* MainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuScene.h; path = spritewalkthrough/MainMenuScene.h; sourceTree = SOURCE_ROOT; };
+		FCCC4C151975B19F00481D84 /* MainMenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuScene.m; path = spritewalkthrough/MainMenuScene.m; sourceTree = SOURCE_ROOT; };
+		FCCC4C351977071A00481D84 /* MoonPatrollerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoonPatrollerScene.h; path = spritewalkthrough/MoonPatrollerScene.h; sourceTree = SOURCE_ROOT; };
+		FCCC4C361977071A00481D84 /* MoonPatrollerScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoonPatrollerScene.m; path = spritewalkthrough/MoonPatrollerScene.m; sourceTree = SOURCE_ROOT; };
+		FCD64D2B1B13DFDF00C31F27 /* PressStart2P.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = PressStart2P.ttf; path = assets/fonts/PressStart2P.ttf; sourceTree = SOURCE_ROOT; };
+		FCD64D2C1B13DFDF00C31F27 /* Robotron.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Robotron.ttf; path = assets/fonts/Robotron.ttf; sourceTree = SOURCE_ROOT; };
+		FCD64D2D1B13DFDF00C31F27 /* space age.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "space age.ttf"; path = "assets/fonts/space age.ttf"; sourceTree = SOURCE_ROOT; };
+		FCD64D2E1B13DFDF00C31F27 /* ARCADE_N.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = ARCADE_N.TTF; path = assets/fonts/ARCADE_N.TTF; sourceTree = SOURCE_ROOT; };
+		FCD64D2F1B13DFDF00C31F27 /* Hyperspace.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Hyperspace.ttf; path = assets/fonts/Hyperspace.ttf; sourceTree = SOURCE_ROOT; };
+		FCD64D3C1B13E0BF00C31F27 /* MPfarbg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MPfarbg1.png; path = assets/images/moonpatroller/MPfarbg1.png; sourceTree = SOURCE_ROOT; };
+		FCD64D3F1B13E16100C31F27 /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ship.png; path = assets/images/nostalgiaroids/ship.png; sourceTree = SOURCE_ROOT; };
+		FCD64D401B13E16100C31F27 /* shipThrust1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shipThrust1.png; path = assets/images/nostalgiaroids/shipThrust1.png; sourceTree = SOURCE_ROOT; };
+		FCD64D411B13E16100C31F27 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spark.png; path = assets/images/nostalgiaroids/spark.png; sourceTree = SOURCE_ROOT; };
+		FCD64D421B13E16100C31F27 /* UFO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UFO.png; path = assets/images/nostalgiaroids/UFO.png; sourceTree = SOURCE_ROOT; };
+		FCD64D431B13E16100C31F27 /* ExplosionParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = ExplosionParticle.sks; path = assets/images/nostalgiaroids/ExplosionParticle.sks; sourceTree = SOURCE_ROOT; };
+		FCD64D4E1B13E18400C31F27 /* rightPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rightPressed.png; path = assets/images/nostalgiaroids/buttons/rightPressed.png; sourceTree = SOURCE_ROOT; };
+		FCD64D4F1B13E18400C31F27 /* thrustPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thrustPressed.png; path = assets/images/nostalgiaroids/buttons/thrustPressed.png; sourceTree = SOURCE_ROOT; };
+		FCD64D501B13E18400C31F27 /* firePressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = firePressed.png; path = assets/images/nostalgiaroids/buttons/firePressed.png; sourceTree = SOURCE_ROOT; };
+		FCD64D511B13E18400C31F27 /* leftPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = leftPressed.png; path = assets/images/nostalgiaroids/buttons/leftPressed.png; sourceTree = SOURCE_ROOT; };
+		FCD64D521B13E18400C31F27 /* pausePressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pausePressed.png; path = assets/images/nostalgiaroids/buttons/pausePressed.png; sourceTree = SOURCE_ROOT; };
+		FCD64D531B13E18400C31F27 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = assets/images/nostalgiaroids/buttons/pause.png; sourceTree = SOURCE_ROOT; };
+		FCD64D541B13E18400C31F27 /* hyperspace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hyperspace.png; path = assets/images/nostalgiaroids/buttons/hyperspace.png; sourceTree = SOURCE_ROOT; };
+		FCD64D551B13E18400C31F27 /* hyperspacePressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hyperspacePressed.png; path = assets/images/nostalgiaroids/buttons/hyperspacePressed.png; sourceTree = SOURCE_ROOT; };
+		FCD64D561B13E18400C31F27 /* restart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = restart.png; path = assets/images/nostalgiaroids/buttons/restart.png; sourceTree = SOURCE_ROOT; };
+		FCD64D571B13E18400C31F27 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = right.png; path = assets/images/nostalgiaroids/buttons/right.png; sourceTree = SOURCE_ROOT; };
+		FCD64D581B13E18400C31F27 /* thrust.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thrust.png; path = assets/images/nostalgiaroids/buttons/thrust.png; sourceTree = SOURCE_ROOT; };
+		FCD64D591B13E18400C31F27 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fire.png; path = assets/images/nostalgiaroids/buttons/fire.png; sourceTree = SOURCE_ROOT; };
+		FCD64D5A1B13E18400C31F27 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = left.png; path = assets/images/nostalgiaroids/buttons/left.png; sourceTree = SOURCE_ROOT; };
+		FCD64D751B13E1A500C31F27 /* midrock_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = midrock_5.png; path = assets/images/nostalgiaroids/rocks/midrock_5.png; sourceTree = SOURCE_ROOT; };
+		FCD64D761B13E1A500C31F27 /* midrock_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = midrock_1.png; path = assets/images/nostalgiaroids/rocks/midrock_1.png; sourceTree = SOURCE_ROOT; };
+		FCD64D771B13E1A500C31F27 /* midrock_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = midrock_3.png; path = assets/images/nostalgiaroids/rocks/midrock_3.png; sourceTree = SOURCE_ROOT; };
+		FCD64D781B13E1A500C31F27 /* midrock_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = midrock_2.png; path = assets/images/nostalgiaroids/rocks/midrock_2.png; sourceTree = SOURCE_ROOT; };
+		FCD64D791B13E1A500C31F27 /* midrock_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = midrock_4.png; path = assets/images/nostalgiaroids/rocks/midrock_4.png; sourceTree = SOURCE_ROOT; };
+		FCD64D7A1B13E1A500C31F27 /* bigrock_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bigrock_3.png; path = assets/images/nostalgiaroids/rocks/bigrock_3.png; sourceTree = SOURCE_ROOT; };
+		FCD64D7B1B13E1A500C31F27 /* bigrock_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bigrock_5.png; path = assets/images/nostalgiaroids/rocks/bigrock_5.png; sourceTree = SOURCE_ROOT; };
+		FCD64D7C1B13E1A500C31F27 /* bigrock_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bigrock_1.png; path = assets/images/nostalgiaroids/rocks/bigrock_1.png; sourceTree = SOURCE_ROOT; };
+		FCD64D7D1B13E1A500C31F27 /* bigrock_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bigrock_2.png; path = assets/images/nostalgiaroids/rocks/bigrock_2.png; sourceTree = SOURCE_ROOT; };
+		FCD64D7E1B13E1A500C31F27 /* bigrock_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bigrock_4.png; path = assets/images/nostalgiaroids/rocks/bigrock_4.png; sourceTree = SOURCE_ROOT; };
+		FCD64D7F1B13E1A500C31F27 /* smallrock_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smallrock_2.png; path = assets/images/nostalgiaroids/rocks/smallrock_2.png; sourceTree = SOURCE_ROOT; };
+		FCD64D801B13E1A500C31F27 /* smallrock_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smallrock_1.png; path = assets/images/nostalgiaroids/rocks/smallrock_1.png; sourceTree = SOURCE_ROOT; };
+		FCD64D811B13E1A500C31F27 /* smallrock_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smallrock_4.png; path = assets/images/nostalgiaroids/rocks/smallrock_4.png; sourceTree = SOURCE_ROOT; };
+		FCD64D821B13E1A500C31F27 /* smallrock_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smallrock_3.png; path = assets/images/nostalgiaroids/rocks/smallrock_3.png; sourceTree = SOURCE_ROOT; };
+		FCD64D831B13E1A500C31F27 /* smallrock_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smallrock_5.png; path = assets/images/nostalgiaroids/rocks/smallrock_5.png; sourceTree = SOURCE_ROOT; };
+		FCD64DA21B13E30400C31F27 /* mainmenutitle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mainmenutitle.png; path = assets/images/mainmenu/mainmenutitle.png; sourceTree = SOURCE_ROOT; };
+		FCD64DA31B13E30400C31F27 /* patroller_buttonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = patroller_buttonPressed.png; path = assets/images/mainmenu/patroller_buttonPressed.png; sourceTree = SOURCE_ROOT; };
+		FCD64DA41B13E30400C31F27 /* patroller_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = patroller_button.png; path = assets/images/mainmenu/patroller_button.png; sourceTree = SOURCE_ROOT; };
+		FCD64DA51B13E30400C31F27 /* nostalgiaroids_buttonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nostalgiaroids_buttonPressed.png; path = assets/images/mainmenu/nostalgiaroids_buttonPressed.png; sourceTree = SOURCE_ROOT; };
+		FCD64DA61B13E30400C31F27 /* nostalgiaroids_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nostalgiaroids_button.png; path = assets/images/mainmenu/nostalgiaroids_button.png; sourceTree = SOURCE_ROOT; };
+		FCD64DB11B13E32A00C31F27 /* smallufosound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = smallufosound.m4a; path = assets/sounds/nostalgiaroids/smallufosound.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DB21B13E32A00C31F27 /* ufosound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = ufosound.m4a; path = assets/sounds/nostalgiaroids/ufosound.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DB31B13E32A00C31F27 /* lowtonehightone.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = lowtonehightone.m4a; path = assets/sounds/nostalgiaroids/lowtonehightone.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DB41B13E32A00C31F27 /* Nostalgiaroids.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Nostalgiaroids.m4a; path = assets/sounds/nostalgiaroids/Nostalgiaroids.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DB51B13E32A00C31F27 /* lowtonehightone_medium.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = lowtonehightone_medium.m4a; path = assets/sounds/nostalgiaroids/lowtonehightone_medium.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DB61B13E32A00C31F27 /* newshipsound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = newshipsound.m4a; path = assets/sounds/nostalgiaroids/newshipsound.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DB71B13E32A00C31F27 /* explosion2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = explosion2.m4a; path = assets/sounds/nostalgiaroids/explosion2.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DB81B13E32A00C31F27 /* crashsound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = crashsound.m4a; path = assets/sounds/nostalgiaroids/crashsound.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DB91B13E32A00C31F27 /* thrust.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = thrust.m4a; path = assets/sounds/nostalgiaroids/thrust.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DBA1B13E32A00C31F27 /* crashsound2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = crashsound2.m4a; path = assets/sounds/nostalgiaroids/crashsound2.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DBB1B13E32A00C31F27 /* lowtonehightone_fast.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = lowtonehightone_fast.m4a; path = assets/sounds/nostalgiaroids/lowtonehightone_fast.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DBC1B13E32A00C31F27 /* pew.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = pew.m4a; path = assets/sounds/nostalgiaroids/pew.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DBD1B13E32A00C31F27 /* thrust2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = thrust2.m4a; path = assets/sounds/nostalgiaroids/thrust2.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DBE1B13E33B00C31F27 /* controllerdisconnected.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = controllerdisconnected.m4a; path = assets/sounds/global/controllerdisconnected.m4a; sourceTree = "<group>"; };
+		FCD64DBF1B13E33B00C31F27 /* controllerconnected.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = controllerconnected.m4a; path = assets/sounds/global/controllerconnected.m4a; sourceTree = "<group>"; };
+		FCD64DC41B13E36F00C31F27 /* moonpatrol.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = moonpatrol.aif; path = assets/sounds/moonpatroller/moonpatrol.aif; sourceTree = SOURCE_ROOT; };
+		FCD64DC61B13E73200C31F27 /* actualrocks.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = actualrocks.m4a; path = assets/smack/nostalgiaroids/death/actualrocks.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DC71B13E73200C31F27 /* avoid.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = avoid.m4a; path = assets/smack/nostalgiaroids/death/avoid.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DC81B13E73200C31F27 /* boohoo.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = boohoo.m4a; path = assets/smack/nostalgiaroids/death/boohoo.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DC91B13E73200C31F27 /* deathmethaphor.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = deathmethaphor.m4a; path = assets/smack/nostalgiaroids/death/deathmethaphor.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DCA1B13E73200C31F27 /* depressing.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = depressing.m4a; path = assets/smack/nostalgiaroids/death/depressing.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DCB1B13E73200C31F27 /* expensive.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = expensive.m4a; path = assets/smack/nostalgiaroids/death/expensive.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DCC1B13E73200C31F27 /* gotlame.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = gotlame.m4a; path = assets/smack/nostalgiaroids/death/gotlame.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DCD1B13E73200C31F27 /* moron.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = moron.m4a; path = assets/smack/nostalgiaroids/death/moron.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DCE1B13E73200C31F27 /* outsmarted.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = outsmarted.m4a; path = assets/smack/nostalgiaroids/death/outsmarted.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DCF1B13E73200C31F27 /* ow.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = ow.m4a; path = assets/smack/nostalgiaroids/death/ow.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DD01B13E73200C31F27 /* pally.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = pally.m4a; path = assets/smack/nostalgiaroids/death/pally.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DD11B13E73200C31F27 /* proud.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = proud.m4a; path = assets/smack/nostalgiaroids/death/proud.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DD21B13E73200C31F27 /* putdown.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = putdown.m4a; path = assets/smack/nostalgiaroids/death/putdown.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DD31B13E73200C31F27 /* redshirt.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = redshirt.m4a; path = assets/smack/nostalgiaroids/death/redshirt.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DD41B13E73200C31F27 /* rockswinning.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = rockswinning.m4a; path = assets/smack/nostalgiaroids/death/rockswinning.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DD51B13E73200C31F27 /* shootrocks.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = shootrocks.m4a; path = assets/smack/nostalgiaroids/death/shootrocks.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DD61B13E73200C31F27 /* sister2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = sister2.m4a; path = assets/smack/nostalgiaroids/death/sister2.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DD71B13E73200C31F27 /* tryingtohit.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = tryingtohit.m4a; path = assets/smack/nostalgiaroids/death/tryingtohit.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DFE1B13EA1F00C31F27 /* 12yearolds.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = 12yearolds.m4a; path = assets/smack/nostalgiaroids/endofgame/12yearolds.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64DFF1B13EA1F00C31F27 /* 80suck.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = 80suck.m4a; path = assets/smack/nostalgiaroids/endofgame/80suck.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E001B13EA1F00C31F27 /* actualcar.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = actualcar.m4a; path = assets/smack/nostalgiaroids/endofgame/actualcar.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E011B13EA1F00C31F27 /* cat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = cat.m4a; path = assets/smack/nostalgiaroids/endofgame/cat.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E021B13EA1F00C31F27 /* coma.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = coma.m4a; path = assets/smack/nostalgiaroids/endofgame/coma.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E031B13EA1F00C31F27 /* girlfriend.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = girlfriend.m4a; path = assets/smack/nostalgiaroids/endofgame/girlfriend.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E041B13EA1F00C31F27 /* insecurity.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = insecurity.m4a; path = assets/smack/nostalgiaroids/endofgame/insecurity.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E051B13EA1F00C31F27 /* livingpersonification.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = livingpersonification.m4a; path = assets/smack/nostalgiaroids/endofgame/livingpersonification.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E061B13EA1F00C31F27 /* metaphor.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = metaphor.m4a; path = assets/smack/nostalgiaroids/endofgame/metaphor.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E071B13EA1F00C31F27 /* middleschool.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = middleschool.m4a; path = assets/smack/nostalgiaroids/endofgame/middleschool.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E081B13EA1F00C31F27 /* nickleback.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = nickleback.m4a; path = assets/smack/nostalgiaroids/endofgame/nickleback.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E091B13EA1F00C31F27 /* nohope.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = nohope.m4a; path = assets/smack/nostalgiaroids/endofgame/nohope.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E0A1B13EA1F00C31F27 /* nolove.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = nolove.m4a; path = assets/smack/nostalgiaroids/endofgame/nolove.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E0B1B13EA1F00C31F27 /* parents.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = parents.m4a; path = assets/smack/nostalgiaroids/endofgame/parents.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E0C1B13EA1F00C31F27 /* playlikeliz.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = playlikeliz.m4a; path = assets/smack/nostalgiaroids/endofgame/playlikeliz.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E0D1B13EA1F00C31F27 /* shock.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = shock.m4a; path = assets/smack/nostalgiaroids/endofgame/shock.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E0E1B13EA1F00C31F27 /* spoiler.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = spoiler.m4a; path = assets/smack/nostalgiaroids/endofgame/spoiler.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E0F1B13EA1F00C31F27 /* suckateverything.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = suckateverything.m4a; path = assets/smack/nostalgiaroids/endofgame/suckateverything.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E101B13EA1F00C31F27 /* terriblyugly.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = terriblyugly.m4a; path = assets/smack/nostalgiaroids/endofgame/terriblyugly.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E111B13EA1F00C31F27 /* thumbs.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = thumbs.m4a; path = assets/smack/nostalgiaroids/endofgame/thumbs.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E121B13EA1F00C31F27 /* worstperson.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = worstperson.m4a; path = assets/smack/nostalgiaroids/endofgame/worstperson.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E3D1B13EAD800C31F27 /* awful.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = awful.m4a; path = assets/smack/nostalgiaroids/rockhit/awful.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E3E1B13EAD800C31F27 /* better.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = better.m4a; path = assets/smack/nostalgiaroids/rockhit/better.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E3F1B13EAD800C31F27 /* dork.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = dork.m4a; path = assets/smack/nostalgiaroids/rockhit/dork.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E401B13EAD800C31F27 /* embarassing.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = embarassing.m4a; path = assets/smack/nostalgiaroids/rockhit/embarassing.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E411B13EAD800C31F27 /* greatshot.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = greatshot.m4a; path = assets/smack/nostalgiaroids/rockhit/greatshot.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E421B13EAD800C31F27 /* incompetent.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = incompetent.m4a; path = assets/smack/nostalgiaroids/rockhit/incompetent.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E431B13EAD800C31F27 /* lame.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = lame.m4a; path = assets/smack/nostalgiaroids/rockhit/lame.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E441B13EAD800C31F27 /* loser.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = loser.m4a; path = assets/smack/nostalgiaroids/rockhit/loser.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E451B13EAD800C31F27 /* pathetic.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = pathetic.m4a; path = assets/smack/nostalgiaroids/rockhit/pathetic.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E461B13EAD800C31F27 /* pitiful.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = pitiful.m4a; path = assets/smack/nostalgiaroids/rockhit/pitiful.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E471B13EAD800C31F27 /* seriously.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = seriously.m4a; path = assets/smack/nostalgiaroids/rockhit/seriously.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E481B13EAD800C31F27 /* smell.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = smell.m4a; path = assets/smack/nostalgiaroids/rockhit/smell.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E491B13EAD800C31F27 /* soeasy.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = soeasy.m4a; path = assets/smack/nostalgiaroids/rockhit/soeasy.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E4A1B13EAD800C31F27 /* stupidusmax.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = stupidusmax.m4a; path = assets/smack/nostalgiaroids/rockhit/stupidusmax.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E4B1B13EAD800C31F27 /* suckage.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = suckage.m4a; path = assets/smack/nostalgiaroids/rockhit/suckage.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E4C1B13EAD800C31F27 /* whoops.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = whoops.m4a; path = assets/smack/nostalgiaroids/rockhit/whoops.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E6D1B13EB5F00C31F27 /* cancer.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = cancer.m4a; path = assets/smack/nostalgiaroids/shotUFO/cancer.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E6E1B13EB5F00C31F27 /* diplomat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = diplomat.m4a; path = assets/smack/nostalgiaroids/shotUFO/diplomat.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E6F1B13EB5F00C31F27 /* et.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = et.m4a; path = assets/smack/nostalgiaroids/shotUFO/et.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E701B13EB5F00C31F27 /* indigenous.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = indigenous.m4a; path = assets/smack/nostalgiaroids/shotUFO/indigenous.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E711B13EB5F00C31F27 /* klatu.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = klatu.m4a; path = assets/smack/nostalgiaroids/shotUFO/klatu.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E721B13EB5F00C31F27 /* rooting.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = rooting.m4a; path = assets/smack/nostalgiaroids/shotUFO/rooting.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E731B13EB5F00C31F27 /* shotface.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = shotface.m4a; path = assets/smack/nostalgiaroids/shotUFO/shotface.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E741B13EB5F00C31F27 /* xenophobic.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = xenophobic.m4a; path = assets/smack/nostalgiaroids/shotUFO/xenophobic.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E851B13EBAE00C31F27 /* captgenius.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = captgenius.m4a; path = assets/smack/nostalgiaroids/shotbyUFO/captgenius.m4a; sourceTree = "<group>"; };
+		FCD64E861B13EBAE00C31F27 /* flyinto.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = flyinto.m4a; path = assets/smack/nostalgiaroids/shotbyUFO/flyinto.m4a; sourceTree = "<group>"; };
+		FCD64E871B13EBAE00C31F27 /* force.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = force.m4a; path = assets/smack/nostalgiaroids/shotbyUFO/force.m4a; sourceTree = "<group>"; };
+		FCD64E881B13EBAE00C31F27 /* hjerk.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = hjerk.m4a; path = assets/smack/nostalgiaroids/shotbyUFO/hjerk.m4a; sourceTree = "<group>"; };
+		FCD64E891B13EBAE00C31F27 /* stupidhumans.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = stupidhumans.m4a; path = assets/smack/nostalgiaroids/shotbyUFO/stupidhumans.m4a; sourceTree = "<group>"; };
+		FCD64E8A1B13EBAE00C31F27 /* suck.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = suck.m4a; path = assets/smack/nostalgiaroids/shotbyUFO/suck.m4a; sourceTree = "<group>"; };
+		FCD64E971B13EBBD00C31F27 /* clumsy.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = clumsy.m4a; path = assets/smack/nostalgiaroids/UFOcrash/clumsy.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E981B13EBBD00C31F27 /* insurance.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = insurance.m4a; path = assets/smack/nostalgiaroids/UFOcrash/insurance.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64E991B13EBBD00C31F27 /* worseatthis.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = worseatthis.m4a; path = assets/smack/nostalgiaroids/UFOcrash/worseatthis.m4a; sourceTree = SOURCE_ROOT; };
+		FCD64EA01B13EDD800C31F27 /* diz.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = diz.m4a; path = assets/sounds/mainmenu/diz.m4a; sourceTree = SOURCE_ROOT; };
+		FCDBBE8B1960993700714EBA /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GameController.framework; sourceTree = "<group>"; };
+		FCDBBE8D1960AB4400714EBA /* JCRGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCRGameController.h; path = ../JCRGameController.h; sourceTree = "<group>"; };
+		FCDBBE8E1960AB4400714EBA /* JCRGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCRGameController.m; path = ../JCRGameController.m; sourceTree = "<group>"; };
+		FCDBBE901960ACF400714EBA /* JCRGameControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCRGameControllerManager.h; path = ../JCRGameControllerManager.h; sourceTree = "<group>"; };
+		FCDBBE911960ACF400714EBA /* JCRGameControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCRGameControllerManager.m; path = ../JCRGameControllerManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1BE325E17D0B6B1008265BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1BE329D17D0B6C8008265BE /* SpriteKit.framework in Frameworks */,
+				E1BE326717D0B6B1008265BE /* CoreGraphics.framework in Frameworks */,
+				FCDBBE8C1960993700714EBA /* GameController.framework in Frameworks */,
+				E1BE326917D0B6B1008265BE /* UIKit.framework in Frameworks */,
+				E1BE326517D0B6B1008265BE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1BE328217D0B6B1008265BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1BE328917D0B6B1008265BE /* UIKit.framework in Frameworks */,
+				E1BE328817D0B6B1008265BE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E13F5B5417D91B90005DD66F /* View Controllers&App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				E1BE327317D0B6B1008265BE /* SmackAppDelegate.h */,
+				E1BE327417D0B6B1008265BE /* SmackAppDelegate.m */,
+				E1BE327C17D0B6B1008265BE /* SpriteViewController.h */,
+				E1BE327D17D0B6B1008265BE /* SpriteViewController.m */,
+			);
+			name = "View Controllers&App Delegate";
+			sourceTree = "<group>";
+		};
+		E19EBAAD192636A40059F211 /* Rocks */ = {
+			isa = PBXGroup;
+			children = (
+				FCD64D751B13E1A500C31F27 /* midrock_5.png */,
+				FCD64D761B13E1A500C31F27 /* midrock_1.png */,
+				FCD64D771B13E1A500C31F27 /* midrock_3.png */,
+				FCD64D781B13E1A500C31F27 /* midrock_2.png */,
+				FCD64D791B13E1A500C31F27 /* midrock_4.png */,
+				FCD64D7A1B13E1A500C31F27 /* bigrock_3.png */,
+				FCD64D7B1B13E1A500C31F27 /* bigrock_5.png */,
+				FCD64D7C1B13E1A500C31F27 /* bigrock_1.png */,
+				FCD64D7D1B13E1A500C31F27 /* bigrock_2.png */,
+				FCD64D7E1B13E1A500C31F27 /* bigrock_4.png */,
+				FCD64D7F1B13E1A500C31F27 /* smallrock_2.png */,
+				FCD64D801B13E1A500C31F27 /* smallrock_1.png */,
+				FCD64D811B13E1A500C31F27 /* smallrock_4.png */,
+				FCD64D821B13E1A500C31F27 /* smallrock_3.png */,
+				FCD64D831B13E1A500C31F27 /* smallrock_5.png */,
+			);
+			name = Rocks;
+			sourceTree = "<group>";
+		};
+		E1BE325817D0B6B1008265BE = {
+			isa = PBXGroup;
+			children = (
+				E1BE326A17D0B6B1008265BE /* source */,
+				E1D7C7B718FC092300613568 /* assets */,
+				E1BE326317D0B6B1008265BE /* frameworks */,
+				E1BE326217D0B6B1008265BE /* products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1BE326217D0B6B1008265BE /* products */ = {
+			isa = PBXGroup;
+			children = (
+				E1BE326117D0B6B1008265BE /* Smack Arcade.app */,
+				E1BAF2621E298A3B00DFF3AD /* Smack ArcadeTests.xctest */,
+			);
+			name = products;
+			sourceTree = "<group>";
+		};
+		E1BE326317D0B6B1008265BE /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCDBBE8B1960993700714EBA /* GameController.framework */,
+				E1BE329C17D0B6C8008265BE /* SpriteKit.framework */,
+				E1BE326417D0B6B1008265BE /* Foundation.framework */,
+				E1BE326617D0B6B1008265BE /* CoreGraphics.framework */,
+				E1BE326817D0B6B1008265BE /* UIKit.framework */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
+		E1BE326A17D0B6B1008265BE /* source */ = {
+			isa = PBXGroup;
+			children = (
+				FCCC4C131975B16D00481D84 /* scenes */,
+				FCCC4C1219756B3300481D84 /* Classes */,
+				E1BE328C17D0B6B1008265BE /* Tests */,
+				E13F5B5417D91B90005DD66F /* View Controllers&App Delegate */,
+				E1BE326B17D0B6B1008265BE /* Supporting Files */,
+			);
+			name = source;
+			path = SpriteWalkthrough;
+			sourceTree = "<group>";
+		};
+		E1BE326B17D0B6B1008265BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC393AEF1A2FBAC900DD2A2C /* Main_iPhone.storyboard */,
+				E1BE327917D0B6B1008265BE /* Main_iPad.storyboard */,
+				E1BE326C17D0B6B1008265BE /* Smack Arcade-Info.plist */,
+				E1BE326D17D0B6B1008265BE /* InfoPlist.strings */,
+				E1BE327017D0B6B1008265BE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1BE328C17D0B6B1008265BE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E1BE329217D0B6B1008265BE /* SmackTests.m */,
+				E1BE328D17D0B6B1008265BE /* Supporting Files */,
+			);
+			name = Tests;
+			path = SpriteWalkthroughTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		E1BE328D17D0B6B1008265BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1BE328E17D0B6B1008265BE /* Smack ArcadeTests-Info.plist */,
+				E1BE328F17D0B6B1008265BE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1BE32BC17D3D133008265BE /* images */ = {
+			isa = PBXGroup;
+			children = (
+				FCD64D2A1B13DC9D00C31F27 /* moonpatroller */,
+				FCD64D291B13DC9000C31F27 /* nostalgiaroids */,
+				FCCC4C321976CAF400481D84 /* mainmenu */,
+				E1BE327F17D0B6B1008265BE /* Images.xcassets */,
+				E12F41681929175E0054E22E /* explosion.atlas */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		E1D7C7B718FC092300613568 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				FCCC4C171975DB0300481D84 /* fonts */,
+				E1BE32BC17D3D133008265BE /* images */,
+				FCD64D3A1B13E01D00C31F27 /* sounds */,
+				FC06F0DA196301C000E08605 /* smack */,
+			);
+			name = assets;
+			path = SpriteWalkthrough;
+			sourceTree = "<group>";
+		};
+		E1E51E23193BA7C40051A8EE /* death */ = {
+			isa = PBXGroup;
+			children = (
+				FCD64DC61B13E73200C31F27 /* actualrocks.m4a */,
+				FCD64DC71B13E73200C31F27 /* avoid.m4a */,
+				FCD64DC81B13E73200C31F27 /* boohoo.m4a */,
+				FCD64DC91B13E73200C31F27 /* deathmethaphor.m4a */,
+				FCD64DCA1B13E73200C31F27 /* depressing.m4a */,
+				FCD64DCB1B13E73200C31F27 /* expensive.m4a */,
+				FCD64DCC1B13E73200C31F27 /* gotlame.m4a */,
+				FCD64DCD1B13E73200C31F27 /* moron.m4a */,
+				FCD64DCE1B13E73200C31F27 /* outsmarted.m4a */,
+				FCD64DCF1B13E73200C31F27 /* ow.m4a */,
+				FCD64DD01B13E73200C31F27 /* pally.m4a */,
+				FCD64DD11B13E73200C31F27 /* proud.m4a */,
+				FCD64DD21B13E73200C31F27 /* putdown.m4a */,
+				FCD64DD31B13E73200C31F27 /* redshirt.m4a */,
+				FCD64DD41B13E73200C31F27 /* rockswinning.m4a */,
+				FCD64DD51B13E73200C31F27 /* shootrocks.m4a */,
+				FCD64DD61B13E73200C31F27 /* sister2.m4a */,
+				FCD64DD71B13E73200C31F27 /* tryingtohit.m4a */,
+			);
+			path = death;
+			sourceTree = "<group>";
+		};
+		E1E51E27193BA7C40051A8EE /* endofgame */ = {
+			isa = PBXGroup;
+			children = (
+				FCD64DFE1B13EA1F00C31F27 /* 12yearolds.m4a */,
+				FCD64DFF1B13EA1F00C31F27 /* 80suck.m4a */,
+				FCD64E001B13EA1F00C31F27 /* actualcar.m4a */,
+				FCD64E011B13EA1F00C31F27 /* cat.m4a */,
+				FCD64E021B13EA1F00C31F27 /* coma.m4a */,
+				FCD64E031B13EA1F00C31F27 /* girlfriend.m4a */,
+				FCD64E041B13EA1F00C31F27 /* insecurity.m4a */,
+				FCD64E051B13EA1F00C31F27 /* livingpersonification.m4a */,
+				FCD64E061B13EA1F00C31F27 /* metaphor.m4a */,
+				FCD64E071B13EA1F00C31F27 /* middleschool.m4a */,
+				FCD64E081B13EA1F00C31F27 /* nickleback.m4a */,
+				FCD64E091B13EA1F00C31F27 /* nohope.m4a */,
+				FCD64E0A1B13EA1F00C31F27 /* nolove.m4a */,
+				FCD64E0B1B13EA1F00C31F27 /* parents.m4a */,
+				FCD64E0C1B13EA1F00C31F27 /* playlikeliz.m4a */,
+				FCD64E0D1B13EA1F00C31F27 /* shock.m4a */,
+				FCD64E0E1B13EA1F00C31F27 /* spoiler.m4a */,
+				FCD64E0F1B13EA1F00C31F27 /* suckateverything.m4a */,
+				FCD64E101B13EA1F00C31F27 /* terriblyugly.m4a */,
+				FCD64E111B13EA1F00C31F27 /* thumbs.m4a */,
+				FCD64E121B13EA1F00C31F27 /* worstperson.m4a */,
+			);
+			path = endofgame;
+			sourceTree = "<group>";
+		};
+		E1E51E2D193BA7C40051A8EE /* rockhit */ = {
+			isa = PBXGroup;
+			children = (
+				FCD64E3D1B13EAD800C31F27 /* awful.m4a */,
+				FCD64E3E1B13EAD800C31F27 /* better.m4a */,
+				FCD64E3F1B13EAD800C31F27 /* dork.m4a */,
+				FCD64E401B13EAD800C31F27 /* embarassing.m4a */,
+				FCD64E411B13EAD800C31F27 /* greatshot.m4a */,
+				FCD64E421B13EAD800C31F27 /* incompetent.m4a */,
+				FCD64E431B13EAD800C31F27 /* lame.m4a */,
+				FCD64E441B13EAD800C31F27 /* loser.m4a */,
+				FCD64E451B13EAD800C31F27 /* pathetic.m4a */,
+				FCD64E461B13EAD800C31F27 /* pitiful.m4a */,
+				FCD64E471B13EAD800C31F27 /* seriously.m4a */,
+				FCD64E481B13EAD800C31F27 /* smell.m4a */,
+				FCD64E491B13EAD800C31F27 /* soeasy.m4a */,
+				FCD64E4A1B13EAD800C31F27 /* stupidusmax.m4a */,
+				FCD64E4B1B13EAD800C31F27 /* suckage.m4a */,
+				FCD64E4C1B13EAD800C31F27 /* whoops.m4a */,
+			);
+			name = rockhit;
+			path = rock;
+			sourceTree = "<group>";
+		};
+		E1E51E34193BA7C40051A8EE /* shotUFO */ = {
+			isa = PBXGroup;
+			children = (
+				FCD64E6D1B13EB5F00C31F27 /* cancer.m4a */,
+				FCD64E6E1B13EB5F00C31F27 /* diplomat.m4a */,
+				FCD64E6F1B13EB5F00C31F27 /* et.m4a */,
+				FCD64E701B13EB5F00C31F27 /* indigenous.m4a */,
+				FCD64E711B13EB5F00C31F27 /* klatu.m4a */,
+				FCD64E721B13EB5F00C31F27 /* rooting.m4a */,
+				FCD64E731B13EB5F00C31F27 /* shotface.m4a */,
+				FCD64E741B13EB5F00C31F27 /* xenophobic.m4a */,
+			);
+			name = shotUFO;
+			path = UFO;
+			sourceTree = "<group>";
+		};
+		E1ED75F71919AC5000FF96F9 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				FCD64D4E1B13E18400C31F27 /* rightPressed.png */,
+				FCD64D4F1B13E18400C31F27 /* thrustPressed.png */,
+				FCD64D501B13E18400C31F27 /* firePressed.png */,
+				FCD64D511B13E18400C31F27 /* leftPressed.png */,
+				FCD64D521B13E18400C31F27 /* pausePressed.png */,
+				FCD64D531B13E18400C31F27 /* pause.png */,
+				FCD64D541B13E18400C31F27 /* hyperspace.png */,
+				FCD64D551B13E18400C31F27 /* hyperspacePressed.png */,
+				FCD64D561B13E18400C31F27 /* restart.png */,
+				FCD64D571B13E18400C31F27 /* right.png */,
+				FCD64D581B13E18400C31F27 /* thrust.png */,
+				FCD64D591B13E18400C31F27 /* fire.png */,
+				FCD64D5A1B13E18400C31F27 /* left.png */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
+		E1EE761E1943675800686197 /* UFOcrash */ = {
+			isa = PBXGroup;
+			children = (
+				FCD64E971B13EBBD00C31F27 /* clumsy.m4a */,
+				FCD64E981B13EBBD00C31F27 /* insurance.m4a */,
+				FCD64E991B13EBBD00C31F27 /* worseatthis.m4a */,
+			);
+			name = UFOcrash;
+			path = UFO;
+			sourceTree = "<group>";
+		};
+		E1EE762F19439C6D00686197 /* shotbyUFO */ = {
+			isa = PBXGroup;
+			children = (
+				FCD64E851B13EBAE00C31F27 /* captgenius.m4a */,
+				FCD64E861B13EBAE00C31F27 /* flyinto.m4a */,
+				FCD64E871B13EBAE00C31F27 /* force.m4a */,
+				FCD64E881B13EBAE00C31F27 /* hjerk.m4a */,
+				FCD64E891B13EBAE00C31F27 /* stupidhumans.m4a */,
+				FCD64E8A1B13EBAE00C31F27 /* suck.m4a */,
+			);
+			name = shotbyUFO;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		FC06F0D9196301A000E08605 /* nostalgiaroids */ = {
+			isa = PBXGroup;
+			children = (
+				FCD64DB11B13E32A00C31F27 /* smallufosound.m4a */,
+				FCD64DB21B13E32A00C31F27 /* ufosound.m4a */,
+				FCD64DB31B13E32A00C31F27 /* lowtonehightone.m4a */,
+				FCD64DB41B13E32A00C31F27 /* Nostalgiaroids.m4a */,
+				FCD64DB51B13E32A00C31F27 /* lowtonehightone_medium.m4a */,
+				FCD64DB61B13E32A00C31F27 /* newshipsound.m4a */,
+				FCD64DB71B13E32A00C31F27 /* explosion2.m4a */,
+				FCD64DB81B13E32A00C31F27 /* crashsound.m4a */,
+				FCD64DB91B13E32A00C31F27 /* thrust.m4a */,
+				FCD64DBA1B13E32A00C31F27 /* crashsound2.m4a */,
+				FCD64DBB1B13E32A00C31F27 /* lowtonehightone_fast.m4a */,
+				FCD64DBC1B13E32A00C31F27 /* pew.m4a */,
+				FCD64DBD1B13E32A00C31F27 /* thrust2.m4a */,
+			);
+			name = nostalgiaroids;
+			sourceTree = "<group>";
+		};
+		FC06F0DA196301C000E08605 /* smack */ = {
+			isa = PBXGroup;
+			children = (
+				E1E51E23193BA7C40051A8EE /* death */,
+				E1E51E27193BA7C40051A8EE /* endofgame */,
+				E1E51E2D193BA7C40051A8EE /* rockhit */,
+				E1E51E34193BA7C40051A8EE /* shotUFO */,
+				E1EE762F19439C6D00686197 /* shotbyUFO */,
+				E1EE761E1943675800686197 /* UFOcrash */,
+			);
+			name = smack;
+			sourceTree = "<group>";
+		};
+		FCCC4C1219756B3300481D84 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FC0B312219AFDB3F000BE774 /* SKScrollingNode.m */,
+				FC0B312319AFDB3F000BE774 /* SKScrollingNode.h */,
+				FCDBBE8D1960AB4400714EBA /* JCRGameController.h */,
+				FCDBBE8E1960AB4400714EBA /* JCRGameController.m */,
+				FCDBBE901960ACF400714EBA /* JCRGameControllerManager.h */,
+				FCDBBE911960ACF400714EBA /* JCRGameControllerManager.m */,
+				E154A6FB1943AB2200DF9661 /* SKButton.h */,
+				E1ED75F41919A6C000FF96F9 /* SKButton.m */,
+				E1A6A3CB192B8F4A00D256AA /* UFO.h */,
+				E1A6A3CC192B8F4A00D256AA /* UFO.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		FCCC4C131975B16D00481D84 /* scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E1BE329E17D0B796008265BE /* TitleScreenScene.h */,
+				E1BE329F17D0B796008265BE /* TitleScreenScene.m */,
+				FCCC4C351977071A00481D84 /* MoonPatrollerScene.h */,
+				FCCC4C361977071A00481D84 /* MoonPatrollerScene.m */,
+				E1BE32A117D0BA31008265BE /* NostalgiaroidsScene.h */,
+				E1BE32A217D0BA31008265BE /* NostalgiaroidsScene.m */,
+				FCCC4C141975B19F00481D84 /* MainMenuScene.h */,
+				FCCC4C151975B19F00481D84 /* MainMenuScene.m */,
+				E1BAF26C1E29A2A600DFF3AD /* MainMenuScene.swift */,
+				E1BAF2701E29A74400DFF3AD /* SKButtonNode.swift */,
+				E1BAF26B1E29A2A500DFF3AD /* Smack Arcade-Bridging-Header.h */,
+			);
+			name = scenes;
+			sourceTree = "<group>";
+		};
+		FCCC4C171975DB0300481D84 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FCD64D2B1B13DFDF00C31F27 /* PressStart2P.ttf */,
+				FCD64D2C1B13DFDF00C31F27 /* Robotron.ttf */,
+				FCD64D2D1B13DFDF00C31F27 /* space age.ttf */,
+				FCD64D2E1B13DFDF00C31F27 /* ARCADE_N.TTF */,
+				FCD64D2F1B13DFDF00C31F27 /* Hyperspace.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		FCCC4C321976CAF400481D84 /* mainmenu */ = {
+			isa = PBXGroup;
+			children = (
+				FCD64DA21B13E30400C31F27 /* mainmenutitle.png */,
+				FCD64DA31B13E30400C31F27 /* patroller_buttonPressed.png */,
+				FCD64DA41B13E30400C31F27 /* patroller_button.png */,
+				FCD64DA51B13E30400C31F27 /* nostalgiaroids_buttonPressed.png */,
+				FCD64DA61B13E30400C31F27 /* nostalgiaroids_button.png */,
+			);
+			name = mainmenu;
+			sourceTree = "<group>";
+		};
+		FCD64D291B13DC9000C31F27 /* nostalgiaroids */ = {
+			isa = PBXGroup;
+			children = (
+				FCD64D3F1B13E16100C31F27 /* ship.png */,
+				FCD64D401B13E16100C31F27 /* shipThrust1.png */,
+				FCD64D411B13E16100C31F27 /* spark.png */,
+				FCD64D421B13E16100C31F27 /* UFO.png */,
+				FCD64D431B13E16100C31F27 /* ExplosionParticle.sks */,
+				E1ED75F71919AC5000FF96F9 /* Buttons */,
+				E19EBAAD192636A40059F211 /* Rocks */,
+			);
+			name = nostalgiaroids;
+			sourceTree = "<group>";
+		};
+		FCD64D2A1B13DC9D00C31F27 /* moonpatroller */ = {
+			isa = PBXGroup;
+			children = (
+				FCD64D3C1B13E0BF00C31F27 /* MPfarbg1.png */,
+				E1BAF25A1E297F9400DFF3AD /* MPclosebg.png */,
+				E1BAF2601E297FE800DFF3AD /* floor2.png */,
+			);
+			name = moonpatroller;
+			sourceTree = "<group>";
+		};
+		FCD64D3A1B13E01D00C31F27 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FCD64DC31B13E35A00C31F27 /* mainmenu */,
+				FC06F0D9196301A000E08605 /* nostalgiaroids */,
+				FCDBBE971960B0D200714EBA /* controllerstatus */,
+				FCD64D3B1B13E09300C31F27 /* moonpatroller */,
+			);
+			name = sounds;
+			sourceTree = "<group>";
+		};
+		FCD64D3B1B13E09300C31F27 /* moonpatroller */ = {
+			isa = PBXGroup;
+			children = (
+				FCD64DC41B13E36F00C31F27 /* moonpatrol.aif */,
+			);
+			name = moonpatroller;
+			sourceTree = "<group>";
+		};
+		FCD64DC31B13E35A00C31F27 /* mainmenu */ = {
+			isa = PBXGroup;
+			children = (
+				FCD64EA01B13EDD800C31F27 /* diz.m4a */,
+			);
+			name = mainmenu;
+			sourceTree = "<group>";
+		};
+		FCDBBE971960B0D200714EBA /* controllerstatus */ = {
+			isa = PBXGroup;
+			children = (
+				FCD64DBE1B13E33B00C31F27 /* controllerdisconnected.m4a */,
+				FCD64DBF1B13E33B00C31F27 /* controllerconnected.m4a */,
+			);
+			name = controllerstatus;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1BE326017D0B6B1008265BE /* Smack Arcade */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1BE329617D0B6B1008265BE /* Build configuration list for PBXNativeTarget "Smack Arcade" */;
+			buildPhases = (
+				E1BE325D17D0B6B1008265BE /* Sources */,
+				E1BE325E17D0B6B1008265BE /* Frameworks */,
+				E1BE325F17D0B6B1008265BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Smack Arcade";
+			productName = SpriteWalkthrough;
+			productReference = E1BE326117D0B6B1008265BE /* Smack Arcade.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1BE328417D0B6B1008265BE /* Smack ArcadeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1BE329917D0B6B1008265BE /* Build configuration list for PBXNativeTarget "Smack ArcadeTests" */;
+			buildPhases = (
+				E1BE328117D0B6B1008265BE /* Sources */,
+				E1BE328217D0B6B1008265BE /* Frameworks */,
+				E1BE328317D0B6B1008265BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1BE328B17D0B6B1008265BE /* PBXTargetDependency */,
+			);
+			name = "Smack ArcadeTests";
+			productName = SpriteWalkthroughTests;
+			productReference = E1BAF2621E298A3B00DFF3AD /* Smack ArcadeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1BE325917D0B6B1008265BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Sprite;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Jeffery Glasse";
+				TargetAttributes = {
+					E1BE326017D0B6B1008265BE = {
+						DevelopmentTeam = WPGAGSXUST;
+						LastSwiftMigration = 0820;
+					};
+					E1BE328417D0B6B1008265BE = {
+						TestTargetID = E1BE326017D0B6B1008265BE;
+					};
+				};
+			};
+			buildConfigurationList = E1BE325C17D0B6B1008265BE /* Build configuration list for PBXProject "smackarcade" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1BE325817D0B6B1008265BE;
+			productRefGroup = E1BE326217D0B6B1008265BE /* products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1BE326017D0B6B1008265BE /* Smack Arcade */,
+				E1BE328417D0B6B1008265BE /* Smack ArcadeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1BE325F17D0B6B1008265BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCD64E771B13EB5F00C31F27 /* diplomat.m4a in Resources */,
+				E1BAF26A1E298BCE00DFF3AD /* explosion2.m4a in Resources */,
+				FCD64DAB1B13E30400C31F27 /* patroller_button.png in Resources */,
+				E1BAF2631E298AC900DFF3AD /* Nostalgiaroids.m4a in Resources */,
+				FCD64DE81B13E73200C31F27 /* moron.m4a in Resources */,
+				E1BAF2691E298B3E00DFF3AD /* crashsound2.m4a in Resources */,
+				FCD64E591B13EAD800C31F27 /* lame.m4a in Resources */,
+				FCD64E211B13EA1F00C31F27 /* livingpersonification.m4a in Resources */,
+				FCD64D481B13E16100C31F27 /* spark.png in Resources */,
+				FCD64D3D1B13E0BF00C31F27 /* MPfarbg1.png in Resources */,
+				FCD64D9C1B13E1A500C31F27 /* smallrock_4.png in Resources */,
+				FCD64D9E1B13E1A500C31F27 /* smallrock_3.png in Resources */,
+				FCD64DAF1B13E30400C31F27 /* nostalgiaroids_button.png in Resources */,
+				FCD64E811B13EB5F00C31F27 /* shotface.m4a in Resources */,
+				FCD64D6F1B13E18400C31F27 /* thrust.png in Resources */,
+				FCD64E551B13EAD800C31F27 /* greatshot.m4a in Resources */,
+				FCD64D671B13E18400C31F27 /* hyperspace.png in Resources */,
+				FCD64E5B1B13EAD800C31F27 /* loser.m4a in Resources */,
+				FCD64DFA1B13E73200C31F27 /* sister2.m4a in Resources */,
+				FCD64D8C1B13E1A500C31F27 /* midrock_4.png in Resources */,
+				FCD64DAD1B13E30400C31F27 /* nostalgiaroids_buttonPressed.png in Resources */,
+				FCD64D901B13E1A500C31F27 /* bigrock_5.png in Resources */,
+				FCD64D8A1B13E1A500C31F27 /* midrock_2.png in Resources */,
+				FCD64E191B13EA1F00C31F27 /* cat.m4a in Resources */,
+				FCD64DF41B13E73200C31F27 /* redshirt.m4a in Resources */,
+				FCD64DDA1B13E73200C31F27 /* actualrocks.m4a in Resources */,
+				FCD64E1F1B13EA1F00C31F27 /* insecurity.m4a in Resources */,
+				FCD64DA71B13E30400C31F27 /* mainmenutitle.png in Resources */,
+				FCD64E651B13EAD800C31F27 /* soeasy.m4a in Resources */,
+				FCD64E131B13EA1F00C31F27 /* 12yearolds.m4a in Resources */,
+				FCD64D611B13E18400C31F27 /* leftPressed.png in Resources */,
+				E1BAF2681E298B1B00DFF3AD /* newshipsound.m4a in Resources */,
+				FCD64D6D1B13E18400C31F27 /* right.png in Resources */,
+				E1BAF2651E298B0B00DFF3AD /* controllerdisconnected.m4a in Resources */,
+				E1BAF2671E298B1400DFF3AD /* thrust.m4a in Resources */,
+				E1BAF2661E298B0B00DFF3AD /* controllerconnected.m4a in Resources */,
+				E1BAF2641E298B0400DFF3AD /* pew.m4a in Resources */,
+				FCD64D301B13DFDF00C31F27 /* PressStart2P.ttf in Resources */,
+				FCD64DE61B13E73200C31F27 /* gotlame.m4a in Resources */,
+				FCD64E691B13EAD800C31F27 /* suckage.m4a in Resources */,
+				FCD64E9E1B13EBBD00C31F27 /* worseatthis.m4a in Resources */,
+				FCD64D941B13E1A500C31F27 /* bigrock_2.png in Resources */,
+				FCD64DFC1B13E73200C31F27 /* tryingtohit.m4a in Resources */,
+				FCD64E391B13EA1F00C31F27 /* thumbs.m4a in Resources */,
+				FCD64D691B13E18400C31F27 /* hyperspacePressed.png in Resources */,
+				FCD64E7B1B13EB5F00C31F27 /* indigenous.m4a in Resources */,
+				FCD64DEC1B13E73200C31F27 /* ow.m4a in Resources */,
+				FCD64E151B13EA1F00C31F27 /* 80suck.m4a in Resources */,
+				FCD64E631B13EAD800C31F27 /* smell.m4a in Resources */,
+				FCD64E291B13EA1F00C31F27 /* nohope.m4a in Resources */,
+				E1BE328017D0B6B1008265BE /* Images.xcassets in Resources */,
+				FCD64E4D1B13EAD800C31F27 /* awful.m4a in Resources */,
+				FCD64E8F1B13EBAE00C31F27 /* force.m4a in Resources */,
+				FCD64D711B13E18400C31F27 /* fire.png in Resources */,
+				FCD64DDC1B13E73200C31F27 /* avoid.m4a in Resources */,
+				FCD64E171B13EA1F00C31F27 /* actualcar.m4a in Resources */,
+				FCD64E951B13EBAE00C31F27 /* suck.m4a in Resources */,
+				FCD64D9A1B13E1A500C31F27 /* smallrock_1.png in Resources */,
+				FCD64E231B13EA1F00C31F27 /* metaphor.m4a in Resources */,
+				FCD64E5F1B13EAD800C31F27 /* pitiful.m4a in Resources */,
+				FCD64E3B1B13EA1F00C31F27 /* worstperson.m4a in Resources */,
+				FCD64E7F1B13EB5F00C31F27 /* rooting.m4a in Resources */,
+				FCD64DF21B13E73200C31F27 /* putdown.m4a in Resources */,
+				FCD64D841B13E1A500C31F27 /* midrock_5.png in Resources */,
+				FCD64D5B1B13E18400C31F27 /* rightPressed.png in Resources */,
+				FCD64EA11B13EDD900C31F27 /* diz.m4a in Resources */,
+				FCD64DF61B13E73200C31F27 /* rockswinning.m4a in Resources */,
+				FCD64D321B13DFDF00C31F27 /* Robotron.ttf in Resources */,
+				FCD64D4A1B13E16100C31F27 /* UFO.png in Resources */,
+				FCD64E251B13EA1F00C31F27 /* middleschool.m4a in Resources */,
+				FCD64D651B13E18400C31F27 /* pause.png in Resources */,
+				FCD64E2F1B13EA1F00C31F27 /* playlikeliz.m4a in Resources */,
+				FCD64DF01B13E73200C31F27 /* proud.m4a in Resources */,
+				FCD64E751B13EB5F00C31F27 /* cancer.m4a in Resources */,
+				FCD64D361B13DFDF00C31F27 /* ARCADE_N.TTF in Resources */,
+				FCD64DF81B13E73200C31F27 /* shootrocks.m4a in Resources */,
+				E12F41691929175E0054E22E /* explosion.atlas in Resources */,
+				FCD64E371B13EA1F00C31F27 /* terriblyugly.m4a in Resources */,
+				FCD64D4C1B13E16100C31F27 /* ExplosionParticle.sks in Resources */,
+				FCD64D861B13E1A500C31F27 /* midrock_1.png in Resources */,
+				FCD64E311B13EA1F00C31F27 /* shock.m4a in Resources */,
+				FCD64D341B13DFDF00C31F27 /* space age.ttf in Resources */,
+				FCD64E671B13EAD800C31F27 /* stupidusmax.m4a in Resources */,
+				FCD64E531B13EAD800C31F27 /* embarassing.m4a in Resources */,
+				FCD64DDE1B13E73200C31F27 /* boohoo.m4a in Resources */,
+				FCD64E911B13EBAE00C31F27 /* hjerk.m4a in Resources */,
+				FCD64E1B1B13EA1F00C31F27 /* coma.m4a in Resources */,
+				FCD64D921B13E1A500C31F27 /* bigrock_1.png in Resources */,
+				FCD64DA91B13E30400C31F27 /* patroller_buttonPressed.png in Resources */,
+				FCD64E9A1B13EBBD00C31F27 /* clumsy.m4a in Resources */,
+				FCD64DE01B13E73200C31F27 /* deathmethaphor.m4a in Resources */,
+				E1BAF25B1E297F9400DFF3AD /* MPclosebg.png in Resources */,
+				FCD64E9C1B13EBBD00C31F27 /* insurance.m4a in Resources */,
+				FCD64DA01B13E1A500C31F27 /* smallrock_5.png in Resources */,
+				FCD64E4F1B13EAD800C31F27 /* better.m4a in Resources */,
+				FCD64E351B13EA1F00C31F27 /* suckateverything.m4a in Resources */,
+				FCD64E7D1B13EB5F00C31F27 /* klatu.m4a in Resources */,
+				FCD64DEA1B13E73200C31F27 /* outsmarted.m4a in Resources */,
+				FCD64D8E1B13E1A500C31F27 /* bigrock_3.png in Resources */,
+				FCD64E2B1B13EA1F00C31F27 /* nolove.m4a in Resources */,
+				FCD64E271B13EA1F00C31F27 /* nickleback.m4a in Resources */,
+				FCD64D631B13E18400C31F27 /* pausePressed.png in Resources */,
+				FCD64E571B13EAD800C31F27 /* incompetent.m4a in Resources */,
+				E1BE326F17D0B6B1008265BE /* InfoPlist.strings in Resources */,
+				FC393AF11A2FBAC900DD2A2C /* Main_iPhone.storyboard in Resources */,
+				FCD64E511B13EAD800C31F27 /* dork.m4a in Resources */,
+				FCD64E5D1B13EAD800C31F27 /* pathetic.m4a in Resources */,
+				FCD64E931B13EBAE00C31F27 /* stupidhumans.m4a in Resources */,
+				FCD64DEE1B13E73200C31F27 /* pally.m4a in Resources */,
+				FCD64DE41B13E73200C31F27 /* expensive.m4a in Resources */,
+				FCD64D981B13E1A500C31F27 /* smallrock_2.png in Resources */,
+				FCD64D441B13E16100C31F27 /* ship.png in Resources */,
+				FCD64D731B13E18400C31F27 /* left.png in Resources */,
+				FCD64E8B1B13EBAE00C31F27 /* captgenius.m4a in Resources */,
+				FCD64D5F1B13E18400C31F27 /* firePressed.png in Resources */,
+				FCD64E8D1B13EBAE00C31F27 /* flyinto.m4a in Resources */,
+				FCD64E331B13EA1F00C31F27 /* spoiler.m4a in Resources */,
+				FCD64D381B13DFDF00C31F27 /* Hyperspace.ttf in Resources */,
+				FCD64DE21B13E73200C31F27 /* depressing.m4a in Resources */,
+				FCD64D461B13E16100C31F27 /* shipThrust1.png in Resources */,
+				FCD64D881B13E1A500C31F27 /* midrock_3.png in Resources */,
+				FCD64E2D1B13EA1F00C31F27 /* parents.m4a in Resources */,
+				FCD64D6B1B13E18400C31F27 /* restart.png in Resources */,
+				FCD64D5D1B13E18400C31F27 /* thrustPressed.png in Resources */,
+				E1BAF2611E297FE800DFF3AD /* floor2.png in Resources */,
+				FCD64E611B13EAD800C31F27 /* seriously.m4a in Resources */,
+				FCD64E6B1B13EAD800C31F27 /* whoops.m4a in Resources */,
+				FCD64E831B13EB5F00C31F27 /* xenophobic.m4a in Resources */,
+				FCD64E791B13EB5F00C31F27 /* et.m4a in Resources */,
+				FCD64E1D1B13EA1F00C31F27 /* girlfriend.m4a in Resources */,
+				FCD64D961B13E1A500C31F27 /* bigrock_4.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1BE328317D0B6B1008265BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCD64E261B13EA1F00C31F27 /* middleschool.m4a in Resources */,
+				FCD64D8D1B13E1A500C31F27 /* midrock_4.png in Resources */,
+				FCD64E281B13EA1F00C31F27 /* nickleback.m4a in Resources */,
+				FCD64E7A1B13EB5F00C31F27 /* et.m4a in Resources */,
+				FCD64E9F1B13EBBD00C31F27 /* worseatthis.m4a in Resources */,
+				FCD64D351B13DFDF00C31F27 /* space age.ttf in Resources */,
+				FCD64DAE1B13E30400C31F27 /* nostalgiaroids_buttonPressed.png in Resources */,
+				FCD64D9B1B13E1A500C31F27 /* smallrock_1.png in Resources */,
+				FCD64D971B13E1A500C31F27 /* bigrock_4.png in Resources */,
+				FCD64E5A1B13EAD800C31F27 /* lame.m4a in Resources */,
+				FCD64E221B13EA1F00C31F27 /* livingpersonification.m4a in Resources */,
+				FCD64D471B13E16100C31F27 /* shipThrust1.png in Resources */,
+				FCD64E621B13EAD800C31F27 /* seriously.m4a in Resources */,
+				FCD64E781B13EB5F00C31F27 /* diplomat.m4a in Resources */,
+				FCD64E5E1B13EAD800C31F27 /* pathetic.m4a in Resources */,
+				FCD64DE11B13E73200C31F27 /* deathmethaphor.m4a in Resources */,
+				FCD64D8B1B13E1A500C31F27 /* midrock_2.png in Resources */,
+				FCD64E3A1B13EA1F00C31F27 /* thumbs.m4a in Resources */,
+				FCD64E5C1B13EAD800C31F27 /* loser.m4a in Resources */,
+				FCD64D4B1B13E16100C31F27 /* UFO.png in Resources */,
+				FCD64DE51B13E73200C31F27 /* expensive.m4a in Resources */,
+				FCD64DA81B13E30400C31F27 /* mainmenutitle.png in Resources */,
+				FCD64E941B13EBAE00C31F27 /* stupidhumans.m4a in Resources */,
+				FCD64E841B13EB5F00C31F27 /* xenophobic.m4a in Resources */,
+				FCD64E9B1B13EBBD00C31F27 /* clumsy.m4a in Resources */,
+				FCD64E2C1B13EA1F00C31F27 /* nolove.m4a in Resources */,
+				FCD64E7E1B13EB5F00C31F27 /* klatu.m4a in Resources */,
+				FCD64E6A1B13EAD800C31F27 /* suckage.m4a in Resources */,
+				FCD64DDD1B13E73200C31F27 /* avoid.m4a in Resources */,
+				FCD64D871B13E1A500C31F27 /* midrock_1.png in Resources */,
+				FCD64E1E1B13EA1F00C31F27 /* girlfriend.m4a in Resources */,
+				FCD64E681B13EAD800C31F27 /* stupidusmax.m4a in Resources */,
+				FCD64E241B13EA1F00C31F27 /* metaphor.m4a in Resources */,
+				FCD64D641B13E18400C31F27 /* pausePressed.png in Resources */,
+				FCD64DEB1B13E73200C31F27 /* outsmarted.m4a in Resources */,
+				FCD64DF91B13E73200C31F27 /* shootrocks.m4a in Resources */,
+				FCD64DF31B13E73200C31F27 /* putdown.m4a in Resources */,
+				FCD64E801B13EB5F00C31F27 /* rooting.m4a in Resources */,
+				FCD64D991B13E1A500C31F27 /* smallrock_2.png in Resources */,
+				FCD64D491B13E16100C31F27 /* spark.png in Resources */,
+				FCD64D6C1B13E18400C31F27 /* restart.png in Resources */,
+				FCD64D371B13DFDF00C31F27 /* ARCADE_N.TTF in Resources */,
+				FCD64D9D1B13E1A500C31F27 /* smallrock_4.png in Resources */,
+				FCD64D6A1B13E18400C31F27 /* hyperspacePressed.png in Resources */,
+				FCD64E541B13EAD800C31F27 /* embarassing.m4a in Resources */,
+				FCD64E1C1B13EA1F00C31F27 /* coma.m4a in Resources */,
+				FCD64D8F1B13E1A500C31F27 /* bigrock_3.png in Resources */,
+				FCD64DE31B13E73200C31F27 /* depressing.m4a in Resources */,
+				FCD64D451B13E16100C31F27 /* ship.png in Resources */,
+				FCD64D5E1B13E18400C31F27 /* thrustPressed.png in Resources */,
+				FCD64E641B13EAD800C31F27 /* smell.m4a in Resources */,
+				FCD64E321B13EA1F00C31F27 /* shock.m4a in Resources */,
+				FCD64DFD1B13E73200C31F27 /* tryingtohit.m4a in Resources */,
+				FCD64D311B13DFDF00C31F27 /* PressStart2P.ttf in Resources */,
+				FCD64D391B13DFDF00C31F27 /* Hyperspace.ttf in Resources */,
+				FCD64D661B13E18400C31F27 /* pause.png in Resources */,
+				FCD64E521B13EAD800C31F27 /* dork.m4a in Resources */,
+				FCD64DE91B13E73200C31F27 /* moron.m4a in Resources */,
+				FCD64E601B13EAD800C31F27 /* pitiful.m4a in Resources */,
+				FCD64E561B13EAD800C31F27 /* greatshot.m4a in Resources */,
+				FCD64E761B13EB5F00C31F27 /* cancer.m4a in Resources */,
+				FCD64E661B13EAD800C31F27 /* soeasy.m4a in Resources */,
+				FCD64D741B13E18400C31F27 /* left.png in Resources */,
+				FCD64E161B13EA1F00C31F27 /* 80suck.m4a in Resources */,
+				FCD64D931B13E1A500C31F27 /* bigrock_1.png in Resources */,
+				FCD64D6E1B13E18400C31F27 /* right.png in Resources */,
+				FCD64E181B13EA1F00C31F27 /* actualcar.m4a in Resources */,
+				FCD64E361B13EA1F00C31F27 /* suckateverything.m4a in Resources */,
+				FCD64D9F1B13E1A500C31F27 /* smallrock_3.png in Resources */,
+				FCD64E921B13EBAE00C31F27 /* hjerk.m4a in Resources */,
+				FCD64D601B13E18400C31F27 /* firePressed.png in Resources */,
+				FCD64E6C1B13EAD800C31F27 /* whoops.m4a in Resources */,
+				FCD64D891B13E1A500C31F27 /* midrock_3.png in Resources */,
+				FCD64E961B13EBAE00C31F27 /* suck.m4a in Resources */,
+				FCD64D4D1B13E16100C31F27 /* ExplosionParticle.sks in Resources */,
+				FCD64DFB1B13E73200C31F27 /* sister2.m4a in Resources */,
+				FC393AF21A2FBAC900DD2A2C /* Main_iPhone.storyboard in Resources */,
+				FCD64E3C1B13EA1F00C31F27 /* worstperson.m4a in Resources */,
+				FCD64DEF1B13E73200C31F27 /* pally.m4a in Resources */,
+				FCD64E4E1B13EAD800C31F27 /* awful.m4a in Resources */,
+				FCD64D681B13E18400C31F27 /* hyperspace.png in Resources */,
+				FCD64E341B13EA1F00C31F27 /* spoiler.m4a in Resources */,
+				FCD64D701B13E18400C31F27 /* thrust.png in Resources */,
+				FCD64DED1B13E73200C31F27 /* ow.m4a in Resources */,
+				FCD64E8C1B13EBAE00C31F27 /* captgenius.m4a in Resources */,
+				FCD64DA11B13E1A500C31F27 /* smallrock_5.png in Resources */,
+				FCD64DF11B13E73200C31F27 /* proud.m4a in Resources */,
+				FCD64DF71B13E73200C31F27 /* rockswinning.m4a in Resources */,
+				FCD64E501B13EAD800C31F27 /* better.m4a in Resources */,
+				FCD64D951B13E1A500C31F27 /* bigrock_2.png in Resources */,
+				FCD64E7C1B13EB5F00C31F27 /* indigenous.m4a in Resources */,
+				FCD64D621B13E18400C31F27 /* leftPressed.png in Resources */,
+				FCD64DDF1B13E73200C31F27 /* boohoo.m4a in Resources */,
+				FCD64DAA1B13E30400C31F27 /* patroller_buttonPressed.png in Resources */,
+				FCD64E8E1B13EBAE00C31F27 /* flyinto.m4a in Resources */,
+				E1BE329117D0B6B1008265BE /* InfoPlist.strings in Resources */,
+				FCD64EA21B13EDD900C31F27 /* diz.m4a in Resources */,
+				FCD64E201B13EA1F00C31F27 /* insecurity.m4a in Resources */,
+				FCD64DDB1B13E73200C31F27 /* actualrocks.m4a in Resources */,
+				FCD64E141B13EA1F00C31F27 /* 12yearolds.m4a in Resources */,
+				FCD64E901B13EBAE00C31F27 /* force.m4a in Resources */,
+				FCD64E301B13EA1F00C31F27 /* playlikeliz.m4a in Resources */,
+				FCD64E2A1B13EA1F00C31F27 /* nohope.m4a in Resources */,
+				FCD64D911B13E1A500C31F27 /* bigrock_5.png in Resources */,
+				FCD64E2E1B13EA1F00C31F27 /* parents.m4a in Resources */,
+				FCD64DE71B13E73200C31F27 /* gotlame.m4a in Resources */,
+				FCD64DB01B13E30400C31F27 /* nostalgiaroids_button.png in Resources */,
+				FCD64E9D1B13EBBD00C31F27 /* insurance.m4a in Resources */,
+				FCD64D331B13DFDF00C31F27 /* Robotron.ttf in Resources */,
+				FCD64DF51B13E73200C31F27 /* redshirt.m4a in Resources */,
+				FCD64D721B13E18400C31F27 /* fire.png in Resources */,
+				FCD64D851B13E1A500C31F27 /* midrock_5.png in Resources */,
+				FCD64E821B13EB5F00C31F27 /* shotface.m4a in Resources */,
+				FCD64DAC1B13E30400C31F27 /* patroller_button.png in Resources */,
+				FCD64D3E1B13E0BF00C31F27 /* MPfarbg1.png in Resources */,
+				FCD64D5C1B13E18400C31F27 /* rightPressed.png in Resources */,
+				FCD64E381B13EA1F00C31F27 /* terriblyugly.m4a in Resources */,
+				FCD64E581B13EAD800C31F27 /* incompetent.m4a in Resources */,
+				FCD64E1A1B13EA1F00C31F27 /* cat.m4a in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1BE325D17D0B6B1008265BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1BE327117D0B6B1008265BE /* main.m in Sources */,
+				FC0B312419AFDB3F000BE774 /* SKScrollingNode.m in Sources */,
+				E1BE32A317D0BA31008265BE /* NostalgiaroidsScene.m in Sources */,
+				E1BE32A017D0B796008265BE /* TitleScreenScene.m in Sources */,
+				E1BAF26D1E29A2A600DFF3AD /* MainMenuScene.swift in Sources */,
+				FCDBBE8F1960AB4400714EBA /* JCRGameController.m in Sources */,
+				E1BE327517D0B6B1008265BE /* SmackAppDelegate.m in Sources */,
+				E1A6A3CD192B8F4A00D256AA /* UFO.m in Sources */,
+				FCCC4C371977071A00481D84 /* MoonPatrollerScene.m in Sources */,
+				FCCC4C161975B19F00481D84 /* MainMenuScene.m in Sources */,
+				E1BE327E17D0B6B1008265BE /* SpriteViewController.m in Sources */,
+				E1BAF2711E29A74400DFF3AD /* SKButtonNode.swift in Sources */,
+				E1ED75F51919A6C000FF96F9 /* SKButton.m in Sources */,
+				FCDBBE921960ACF400714EBA /* JCRGameControllerManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1BE328117D0B6B1008265BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1BE329317D0B6B1008265BE /* SmackTests.m in Sources */,
+				E1ED75F61919A6C000FF96F9 /* SKButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1BE328B17D0B6B1008265BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1BE326017D0B6B1008265BE /* Smack Arcade */;
+			targetProxy = E1BE328A17D0B6B1008265BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1BE326D17D0B6B1008265BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1BE326E17D0B6B1008265BE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E1BE327917D0B6B1008265BE /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1BE327A17D0B6B1008265BE /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		E1BE328F17D0B6B1008265BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1BE329017D0B6B1008265BE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FC393AEF1A2FBAC900DD2A2C /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC393AF01A2FBAC900DD2A2C /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1BE329417D0B6B1008265BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jeff Glass (5X8GD77U4R)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1BE329517D0B6B1008265BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jeff Glasse (WPGAGSXUST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1BE329717D0B6B1008265BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				INFOPLIST_FILE = "SpriteWalkthrough/Smack Arcade-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeffglasse.smackarcade;
+				PRODUCT_NAME = "Smack Arcade";
+				PROVISIONING_PROFILE = "";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SpriteWalkthrough/Smack Arcade-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E1BE329817D0B6B1008265BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				INFOPLIST_FILE = "SpriteWalkthrough/Smack Arcade-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeffglasse.smackarcade;
+				PRODUCT_NAME = "Smack Arcade";
+				PROVISIONING_PROFILE = "";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SpriteWalkthrough/Smack Arcade-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E1BE329A17D0B6B1008265BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpriteWalkthrough.app/SpriteWalkthrough";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteWalkthrough/SpriteWalkthrough-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SpriteWalkthroughTests/Smack ArcadeTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kogeto.jeffglasse.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "Smack ArcadeTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E1BE329B17D0B6B1008265BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpriteWalkthrough.app/SpriteWalkthrough";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpriteWalkthrough/SpriteWalkthrough-Prefix.pch";
+				INFOPLIST_FILE = "SpriteWalkthroughTests/Smack ArcadeTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kogeto.jeffglasse.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "Smack ArcadeTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1BE325C17D0B6B1008265BE /* Build configuration list for PBXProject "smackarcade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1BE329417D0B6B1008265BE /* Debug */,
+				E1BE329517D0B6B1008265BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1BE329617D0B6B1008265BE /* Build configuration list for PBXNativeTarget "Smack Arcade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1BE329717D0B6B1008265BE /* Debug */,
+				E1BE329817D0B6B1008265BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1BE329917D0B6B1008265BE /* Build configuration list for PBXNativeTarget "Smack ArcadeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1BE329A17D0B6B1008265BE /* Debug */,
+				E1BE329B17D0B6B1008265BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1BE325917D0B6B1008265BE /* Project object */;
+}
