@@ -132,6 +132,7 @@
     if ([self isEnabled]) {
         SEL aSelector = _actionTouchDown;
         [self.targetTouchDown performSelector: aSelector];
+        NSLog(@"did  target down");
         [self setIsSelected:YES];
     }
 }
