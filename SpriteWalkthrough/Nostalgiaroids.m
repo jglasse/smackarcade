@@ -972,6 +972,7 @@ else
     NSArray *explosionTextures = @[ex1,ex2,ex3,ex4,ex5,ex6,ex7,ex8,ex9,ex10,ex11,ex12];
     SKAction *explosionAnimation = [SKAction animateWithTextures:explosionTextures timePerFrame:0.15];
     explodingShip.position=self.mySpaceship.position;
+    explodingShip.zRotation=self.mySpaceship.zRotation;
     [self.mySpaceship removeFromParent];
     self.mySpaceship=nil;
     [self addChild: explodingShip ];
