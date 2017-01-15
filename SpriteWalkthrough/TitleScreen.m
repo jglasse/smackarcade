@@ -6,19 +6,19 @@
 //  Copyright (c) 2017 Jeffery Glasse. All rights reserved.
 //
 
-#import "TitleScreenScene.h"
+#import "TitleScreen.h"
 #import "Nostalgiaroids.h"
 static const int screenYOffset = 50;
 
 
-@interface TitleScreenScene ()
+@interface TitleScreen ()
 
 @property BOOL contentCreated;
 
 
 @end
 
-@implementation TitleScreenScene
+@implementation TitleScreen
 
 
 - (void)didMoveToView: (SKView *) view

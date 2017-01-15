@@ -41,7 +41,7 @@
 		E1BE329117D0B6B1008265BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1BE328F17D0B6B1008265BE /* InfoPlist.strings */; };
 		E1BE329317D0B6B1008265BE /* SmackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BE329217D0B6B1008265BE /* SmackTests.m */; };
 		E1BE329D17D0B6C8008265BE /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BE329C17D0B6C8008265BE /* SpriteKit.framework */; };
-		E1BE32A017D0B796008265BE /* TitleScreenScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BE329F17D0B796008265BE /* TitleScreenScene.m */; };
+		E1BE32A017D0B796008265BE /* TitleScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BE329F17D0B796008265BE /* TitleScreen.m */; };
 		E1BE32A317D0BA31008265BE /* Nostalgiaroids.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BE32A217D0BA31008265BE /* Nostalgiaroids.m */; };
 		E1ED75F51919A6C000FF96F9 /* SKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E1ED75F41919A6C000FF96F9 /* SKButton.m */; };
 		E1ED75F61919A6C000FF96F9 /* SKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E1ED75F41919A6C000FF96F9 /* SKButton.m */; };
@@ -325,8 +325,8 @@
 		E1BE329017D0B6B1008265BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E1BE329217D0B6B1008265BE /* SmackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmackTests.m; sourceTree = "<group>"; };
 		E1BE329C17D0B6C8008265BE /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
-		E1BE329E17D0B796008265BE /* TitleScreenScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleScreenScene.h; sourceTree = "<group>"; };
-		E1BE329F17D0B796008265BE /* TitleScreenScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleScreenScene.m; sourceTree = "<group>"; };
+		E1BE329E17D0B796008265BE /* TitleScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleScreen.h; sourceTree = "<group>"; };
+		E1BE329F17D0B796008265BE /* TitleScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleScreen.m; sourceTree = "<group>"; };
 		E1BE32A117D0BA31008265BE /* Nostalgiaroids.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nostalgiaroids.h; sourceTree = "<group>"; };
 		E1BE32A217D0BA31008265BE /* Nostalgiaroids.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nostalgiaroids.m; sourceTree = "<group>"; };
 		E1ED75F41919A6C000FF96F9 /* SKButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKButton.m; path = ../SKButton.m; sourceTree = "<group>"; };
@@ -818,8 +818,8 @@
 		FCCC4C131975B16D00481D84 /* scenes */ = {
 			isa = PBXGroup;
 			children = (
-				E1BE329E17D0B796008265BE /* TitleScreenScene.h */,
-				E1BE329F17D0B796008265BE /* TitleScreenScene.m */,
+				E1BE329E17D0B796008265BE /* TitleScreen.h */,
+				E1BE329F17D0B796008265BE /* TitleScreen.m */,
 				FCCC4C351977071A00481D84 /* MoonPatroller.h */,
 				FCCC4C361977071A00481D84 /* MoonPatroller.m */,
 				E1BE32A117D0BA31008265BE /* Nostalgiaroids.h */,
@@ -1277,7 +1277,7 @@
 				E1BE327117D0B6B1008265BE /* main.m in Sources */,
 				FC0B312419AFDB3F000BE774 /* SKScrollingNode.m in Sources */,
 				E1BE32A317D0BA31008265BE /* Nostalgiaroids.m in Sources */,
-				E1BE32A017D0B796008265BE /* TitleScreenScene.m in Sources */,
+				E1BE32A017D0B796008265BE /* TitleScreen.m in Sources */,
 				E1BE327517D0B6B1008265BE /* SmackAppDelegate.m in Sources */,
 				E1A6A3CD192B8F4A00D256AA /* UFO.m in Sources */,
 				FCCC4C371977071A00481D84 /* MoonPatroller.m in Sources */,

@@ -8,7 +8,7 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface TitleScreenScene : SKScene
+@interface TitleScreen : SKScene
 
 
 @end

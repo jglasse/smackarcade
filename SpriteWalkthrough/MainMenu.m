@@ -8,7 +8,7 @@
 
 #import "MainMenu.h"
 #import "SKButton.h"
-#import "TitleScreenScene.h"
+#import "TitleScreen.h"
 #import "MoonPatroller.h"
 
 @interface MainMenu ()
@@ -74,7 +74,7 @@
 
 -(void) gotoNostalgiaroids
 {
-    SKScene *titleScene  = [[TitleScreenScene alloc] initWithSize:self.size];
+    SKScene *titleScene  = [[TitleScreen alloc] initWithSize:self.size];
     SKTransition *colorfade = [SKTransition fadeWithColor:[SKColor blackColor] duration:1.25];
     [self.view presentScene:titleScene transition:colorfade];
     
