@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		E12F41691929175E0054E22E /* explosion.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E12F41681929175E0054E22E /* explosion.atlas */; };
+		E14182B81E2AE5910034F0F5 /* lowtonehightone.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DB31B13E32A00C31F27 /* lowtonehightone.m4a */; };
+		E14182B91E2AE5940034F0F5 /* lowtonehightone_medium.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DB51B13E32A00C31F27 /* lowtonehightone_medium.m4a */; };
+		E14182BA1E2AE5980034F0F5 /* lowtonehightone_fast.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DBB1B13E32A00C31F27 /* lowtonehightone_fast.m4a */; };
+		E14182BB1E2AE5DA0034F0F5 /* moonpatrol.aif in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DC41B13E36F00C31F27 /* moonpatrol.aif */; };
+		E14182BC1E2AE7660034F0F5 /* smallufosound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DB11B13E32A00C31F27 /* smallufosound.m4a */; };
+		E14182BD1E2AE76D0034F0F5 /* ufosound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DB21B13E32A00C31F27 /* ufosound.m4a */; };
+		E14182BE1E2AE7780034F0F5 /* crashsound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DB81B13E32A00C31F27 /* crashsound.m4a */; };
+		E14182BF1E2AE7810034F0F5 /* thrust2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DBD1B13E32A00C31F27 /* thrust2.m4a */; };
+		E14182C11E2AEA3F0034F0F5 /* passengers.m4a in Resources */ = {isa = PBXBuildFile; fileRef = E14182C01E2AEA3F0034F0F5 /* passengers.m4a */; };
 		E1A6A3CD192B8F4A00D256AA /* UFO.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A6A3CC192B8F4A00D256AA /* UFO.m */; };
 		E1BAF25B1E297F9400DFF3AD /* MPclosebg.png in Resources */ = {isa = PBXBuildFile; fileRef = E1BAF25A1E297F9400DFF3AD /* MPclosebg.png */; };
 		E1BAF2611E297FE800DFF3AD /* floor2.png in Resources */ = {isa = PBXBuildFile; fileRef = E1BAF2601E297FE800DFF3AD /* floor2.png */; };
@@ -33,14 +42,14 @@
 		E1BE329317D0B6B1008265BE /* SmackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BE329217D0B6B1008265BE /* SmackTests.m */; };
 		E1BE329D17D0B6C8008265BE /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BE329C17D0B6C8008265BE /* SpriteKit.framework */; };
 		E1BE32A017D0B796008265BE /* TitleScreenScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BE329F17D0B796008265BE /* TitleScreenScene.m */; };
-		E1BE32A317D0BA31008265BE /* NostalgiaroidsScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BE32A217D0BA31008265BE /* NostalgiaroidsScene.m */; };
+		E1BE32A317D0BA31008265BE /* Nostalgiaroids.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BE32A217D0BA31008265BE /* Nostalgiaroids.m */; };
 		E1ED75F51919A6C000FF96F9 /* SKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E1ED75F41919A6C000FF96F9 /* SKButton.m */; };
 		E1ED75F61919A6C000FF96F9 /* SKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E1ED75F41919A6C000FF96F9 /* SKButton.m */; };
 		FC0B312419AFDB3F000BE774 /* SKScrollingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0B312219AFDB3F000BE774 /* SKScrollingNode.m */; };
 		FC393AF11A2FBAC900DD2A2C /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC393AEF1A2FBAC900DD2A2C /* Main_iPhone.storyboard */; };
 		FC393AF21A2FBAC900DD2A2C /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC393AEF1A2FBAC900DD2A2C /* Main_iPhone.storyboard */; };
-		FCCC4C161975B19F00481D84 /* MainMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC4C151975B19F00481D84 /* MainMenuScene.m */; };
-		FCCC4C371977071A00481D84 /* MoonPatrollerScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC4C361977071A00481D84 /* MoonPatrollerScene.m */; };
+		FCCC4C161975B19F00481D84 /* MainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC4C151975B19F00481D84 /* MainMenu.m */; };
+		FCCC4C371977071A00481D84 /* MoonPatroller.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCC4C361977071A00481D84 /* MoonPatroller.m */; };
 		FCD64D301B13DFDF00C31F27 /* PressStart2P.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D2B1B13DFDF00C31F27 /* PressStart2P.ttf */; };
 		FCD64D311B13DFDF00C31F27 /* PressStart2P.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D2B1B13DFDF00C31F27 /* PressStart2P.ttf */; };
 		FCD64D321B13DFDF00C31F27 /* Robotron.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCD64D2C1B13DFDF00C31F27 /* Robotron.ttf */; };
@@ -290,14 +299,14 @@
 
 /* Begin PBXFileReference section */
 		E12F41681929175E0054E22E /* explosion.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = explosion.atlas; path = ../explosion.atlas; sourceTree = "<group>"; };
+		E14182C01E2AEA3F0034F0F5 /* passengers.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = passengers.m4a; path = assets/smack/nostalgiaroids/endofgame/passengers.m4a; sourceTree = SOURCE_ROOT; };
 		E154A6FB1943AB2200DF9661 /* SKButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKButton.h; path = ../SKButton.h; sourceTree = "<group>"; };
 		E1A6A3CB192B8F4A00D256AA /* UFO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UFO.h; path = ../UFO.h; sourceTree = "<group>"; };
 		E1A6A3CC192B8F4A00D256AA /* UFO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UFO.m; path = ../UFO.m; sourceTree = "<group>"; };
 		E1BAF25A1E297F9400DFF3AD /* MPclosebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MPclosebg.png; sourceTree = "<group>"; };
 		E1BAF2601E297FE800DFF3AD /* floor2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = floor2.png; sourceTree = "<group>"; };
 		E1BAF2621E298A3B00DFF3AD /* Smack ArcadeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smack ArcadeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1BAF26B1E29A2A500DFF3AD /* Smack Arcade-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack Arcade-Bridging-Header.h"; sourceTree = "<group>"; };
-		E1BAF26C1E29A2A600DFF3AD /* MainMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
+		E1BAF26C1E29A2A600DFF3AD /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		E1BAF2701E29A74400DFF3AD /* SKButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKButtonNode.swift; sourceTree = "<group>"; };
 		E1BE326117D0B6B1008265BE /* Smack Arcade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smack Arcade.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1BE326417D0B6B1008265BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -318,16 +327,16 @@
 		E1BE329C17D0B6C8008265BE /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		E1BE329E17D0B796008265BE /* TitleScreenScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleScreenScene.h; sourceTree = "<group>"; };
 		E1BE329F17D0B796008265BE /* TitleScreenScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleScreenScene.m; sourceTree = "<group>"; };
-		E1BE32A117D0BA31008265BE /* NostalgiaroidsScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NostalgiaroidsScene.h; sourceTree = "<group>"; };
-		E1BE32A217D0BA31008265BE /* NostalgiaroidsScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NostalgiaroidsScene.m; sourceTree = "<group>"; };
+		E1BE32A117D0BA31008265BE /* Nostalgiaroids.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nostalgiaroids.h; sourceTree = "<group>"; };
+		E1BE32A217D0BA31008265BE /* Nostalgiaroids.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nostalgiaroids.m; sourceTree = "<group>"; };
 		E1ED75F41919A6C000FF96F9 /* SKButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SKButton.m; path = ../SKButton.m; sourceTree = "<group>"; };
 		FC0B312219AFDB3F000BE774 /* SKScrollingNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKScrollingNode.m; sourceTree = "<group>"; };
 		FC0B312319AFDB3F000BE774 /* SKScrollingNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKScrollingNode.h; sourceTree = "<group>"; };
 		FC393AF01A2FBAC900DD2A2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		FCCC4C141975B19F00481D84 /* MainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuScene.h; path = spritewalkthrough/MainMenuScene.h; sourceTree = SOURCE_ROOT; };
-		FCCC4C151975B19F00481D84 /* MainMenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuScene.m; path = spritewalkthrough/MainMenuScene.m; sourceTree = SOURCE_ROOT; };
-		FCCC4C351977071A00481D84 /* MoonPatrollerScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoonPatrollerScene.h; path = spritewalkthrough/MoonPatrollerScene.h; sourceTree = SOURCE_ROOT; };
-		FCCC4C361977071A00481D84 /* MoonPatrollerScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoonPatrollerScene.m; path = spritewalkthrough/MoonPatrollerScene.m; sourceTree = SOURCE_ROOT; };
+		FCCC4C141975B19F00481D84 /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenu.h; path = spritewalkthrough/MainMenu.h; sourceTree = SOURCE_ROOT; };
+		FCCC4C151975B19F00481D84 /* MainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenu.m; path = spritewalkthrough/MainMenu.m; sourceTree = SOURCE_ROOT; };
+		FCCC4C351977071A00481D84 /* MoonPatroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoonPatroller.h; path = spritewalkthrough/MoonPatroller.h; sourceTree = SOURCE_ROOT; };
+		FCCC4C361977071A00481D84 /* MoonPatroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoonPatroller.m; path = spritewalkthrough/MoonPatroller.m; sourceTree = SOURCE_ROOT; };
 		FCD64D2B1B13DFDF00C31F27 /* PressStart2P.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = PressStart2P.ttf; path = assets/fonts/PressStart2P.ttf; sourceTree = SOURCE_ROOT; };
 		FCD64D2C1B13DFDF00C31F27 /* Robotron.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Robotron.ttf; path = assets/fonts/Robotron.ttf; sourceTree = SOURCE_ROOT; };
 		FCD64D2D1B13DFDF00C31F27 /* space age.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "space age.ttf"; path = "assets/fonts/space age.ttf"; sourceTree = SOURCE_ROOT; };
@@ -462,10 +471,6 @@
 		FCD64E991B13EBBD00C31F27 /* worseatthis.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = worseatthis.m4a; path = assets/smack/nostalgiaroids/UFOcrash/worseatthis.m4a; sourceTree = SOURCE_ROOT; };
 		FCD64EA01B13EDD800C31F27 /* diz.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = diz.m4a; path = assets/sounds/mainmenu/diz.m4a; sourceTree = SOURCE_ROOT; };
 		FCDBBE8B1960993700714EBA /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GameController.framework; sourceTree = "<group>"; };
-		FCDBBE8D1960AB4400714EBA /* JCRGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCRGameController.h; path = ../JCRGameController.h; sourceTree = "<group>"; };
-		FCDBBE8E1960AB4400714EBA /* JCRGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCRGameController.m; path = ../JCRGameController.m; sourceTree = "<group>"; };
-		FCDBBE901960ACF400714EBA /* JCRGameControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCRGameControllerManager.h; path = ../JCRGameControllerManager.h; sourceTree = "<group>"; };
-		FCDBBE911960ACF400714EBA /* JCRGameControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCRGameControllerManager.m; path = ../JCRGameControllerManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -666,6 +671,7 @@
 				FCD64E081B13EA1F00C31F27 /* nickleback.m4a */,
 				FCD64E091B13EA1F00C31F27 /* nohope.m4a */,
 				FCD64E0A1B13EA1F00C31F27 /* nolove.m4a */,
+				E14182C01E2AEA3F0034F0F5 /* passengers.m4a */,
 				FCD64E0B1B13EA1F00C31F27 /* parents.m4a */,
 				FCD64E0C1B13EA1F00C31F27 /* playlikeliz.m4a */,
 				FCD64E0D1B13EA1F00C31F27 /* shock.m4a */,
@@ -801,10 +807,6 @@
 			children = (
 				FC0B312219AFDB3F000BE774 /* SKScrollingNode.m */,
 				FC0B312319AFDB3F000BE774 /* SKScrollingNode.h */,
-				FCDBBE8D1960AB4400714EBA /* JCRGameController.h */,
-				FCDBBE8E1960AB4400714EBA /* JCRGameController.m */,
-				FCDBBE901960ACF400714EBA /* JCRGameControllerManager.h */,
-				FCDBBE911960ACF400714EBA /* JCRGameControllerManager.m */,
 				E154A6FB1943AB2200DF9661 /* SKButton.h */,
 				E1ED75F41919A6C000FF96F9 /* SKButton.m */,
 				E1A6A3CB192B8F4A00D256AA /* UFO.h */,
@@ -818,15 +820,14 @@
 			children = (
 				E1BE329E17D0B796008265BE /* TitleScreenScene.h */,
 				E1BE329F17D0B796008265BE /* TitleScreenScene.m */,
-				FCCC4C351977071A00481D84 /* MoonPatrollerScene.h */,
-				FCCC4C361977071A00481D84 /* MoonPatrollerScene.m */,
-				E1BE32A117D0BA31008265BE /* NostalgiaroidsScene.h */,
-				E1BE32A217D0BA31008265BE /* NostalgiaroidsScene.m */,
-				FCCC4C141975B19F00481D84 /* MainMenuScene.h */,
-				FCCC4C151975B19F00481D84 /* MainMenuScene.m */,
-				E1BAF26C1E29A2A600DFF3AD /* MainMenuScene.swift */,
+				FCCC4C351977071A00481D84 /* MoonPatroller.h */,
+				FCCC4C361977071A00481D84 /* MoonPatroller.m */,
+				E1BE32A117D0BA31008265BE /* Nostalgiaroids.h */,
+				E1BE32A217D0BA31008265BE /* Nostalgiaroids.m */,
+				FCCC4C141975B19F00481D84 /* MainMenu.h */,
+				FCCC4C151975B19F00481D84 /* MainMenu.m */,
+				E1BAF26C1E29A2A600DFF3AD /* MainMenu.swift */,
 				E1BAF2701E29A74400DFF3AD /* SKButtonNode.swift */,
-				E1BAF26B1E29A2A500DFF3AD /* Smack Arcade-Bridging-Header.h */,
 			);
 			name = scenes;
 			sourceTree = "<group>";
@@ -999,6 +1000,7 @@
 			files = (
 				FCD64E771B13EB5F00C31F27 /* diplomat.m4a in Resources */,
 				E1BAF26A1E298BCE00DFF3AD /* explosion2.m4a in Resources */,
+				E14182BF1E2AE7810034F0F5 /* thrust2.m4a in Resources */,
 				FCD64DAB1B13E30400C31F27 /* patroller_button.png in Resources */,
 				E1BAF2631E298AC900DFF3AD /* Nostalgiaroids.m4a in Resources */,
 				FCD64DE81B13E73200C31F27 /* moron.m4a in Resources */,
@@ -1015,6 +1017,7 @@
 				FCD64E551B13EAD800C31F27 /* greatshot.m4a in Resources */,
 				FCD64D671B13E18400C31F27 /* hyperspace.png in Resources */,
 				FCD64E5B1B13EAD800C31F27 /* loser.m4a in Resources */,
+				E14182B91E2AE5940034F0F5 /* lowtonehightone_medium.m4a in Resources */,
 				FCD64DFA1B13E73200C31F27 /* sister2.m4a in Resources */,
 				FCD64D8C1B13E1A500C31F27 /* midrock_4.png in Resources */,
 				FCD64DAD1B13E30400C31F27 /* nostalgiaroids_buttonPressed.png in Resources */,
@@ -1023,6 +1026,7 @@
 				FCD64E191B13EA1F00C31F27 /* cat.m4a in Resources */,
 				FCD64DF41B13E73200C31F27 /* redshirt.m4a in Resources */,
 				FCD64DDA1B13E73200C31F27 /* actualrocks.m4a in Resources */,
+				E14182BA1E2AE5980034F0F5 /* lowtonehightone_fast.m4a in Resources */,
 				FCD64E1F1B13EA1F00C31F27 /* insecurity.m4a in Resources */,
 				FCD64DA71B13E30400C31F27 /* mainmenutitle.png in Resources */,
 				FCD64E651B13EAD800C31F27 /* soeasy.m4a in Resources */,
@@ -1031,6 +1035,7 @@
 				E1BAF2681E298B1B00DFF3AD /* newshipsound.m4a in Resources */,
 				FCD64D6D1B13E18400C31F27 /* right.png in Resources */,
 				E1BAF2651E298B0B00DFF3AD /* controllerdisconnected.m4a in Resources */,
+				E14182BD1E2AE76D0034F0F5 /* ufosound.m4a in Resources */,
 				E1BAF2671E298B1400DFF3AD /* thrust.m4a in Resources */,
 				E1BAF2661E298B0B00DFF3AD /* controllerconnected.m4a in Resources */,
 				E1BAF2641E298B0400DFF3AD /* pew.m4a in Resources */,
@@ -1062,6 +1067,7 @@
 				FCD64DF21B13E73200C31F27 /* putdown.m4a in Resources */,
 				FCD64D841B13E1A500C31F27 /* midrock_5.png in Resources */,
 				FCD64D5B1B13E18400C31F27 /* rightPressed.png in Resources */,
+				E14182C11E2AEA3F0034F0F5 /* passengers.m4a in Resources */,
 				FCD64EA11B13EDD900C31F27 /* diz.m4a in Resources */,
 				FCD64DF61B13E73200C31F27 /* rockswinning.m4a in Resources */,
 				FCD64D321B13DFDF00C31F27 /* Robotron.ttf in Resources */,
@@ -1078,6 +1084,7 @@
 				FCD64D4C1B13E16100C31F27 /* ExplosionParticle.sks in Resources */,
 				FCD64D861B13E1A500C31F27 /* midrock_1.png in Resources */,
 				FCD64E311B13EA1F00C31F27 /* shock.m4a in Resources */,
+				E14182B81E2AE5910034F0F5 /* lowtonehightone.m4a in Resources */,
 				FCD64D341B13DFDF00C31F27 /* space age.ttf in Resources */,
 				FCD64E671B13EAD800C31F27 /* stupidusmax.m4a in Resources */,
 				FCD64E531B13EAD800C31F27 /* embarassing.m4a in Resources */,
@@ -1107,6 +1114,7 @@
 				FCD64E931B13EBAE00C31F27 /* stupidhumans.m4a in Resources */,
 				FCD64DEE1B13E73200C31F27 /* pally.m4a in Resources */,
 				FCD64DE41B13E73200C31F27 /* expensive.m4a in Resources */,
+				E14182BE1E2AE7780034F0F5 /* crashsound.m4a in Resources */,
 				FCD64D981B13E1A500C31F27 /* smallrock_2.png in Resources */,
 				FCD64D441B13E16100C31F27 /* ship.png in Resources */,
 				FCD64D731B13E18400C31F27 /* left.png in Resources */,
@@ -1124,8 +1132,10 @@
 				E1BAF2611E297FE800DFF3AD /* floor2.png in Resources */,
 				FCD64E611B13EAD800C31F27 /* seriously.m4a in Resources */,
 				FCD64E6B1B13EAD800C31F27 /* whoops.m4a in Resources */,
+				E14182BB1E2AE5DA0034F0F5 /* moonpatrol.aif in Resources */,
 				FCD64E831B13EB5F00C31F27 /* xenophobic.m4a in Resources */,
 				FCD64E791B13EB5F00C31F27 /* et.m4a in Resources */,
+				E14182BC1E2AE7660034F0F5 /* smallufosound.m4a in Resources */,
 				FCD64E1D1B13EA1F00C31F27 /* girlfriend.m4a in Resources */,
 				FCD64D961B13E1A500C31F27 /* bigrock_4.png in Resources */,
 			);
@@ -1266,12 +1276,12 @@
 			files = (
 				E1BE327117D0B6B1008265BE /* main.m in Sources */,
 				FC0B312419AFDB3F000BE774 /* SKScrollingNode.m in Sources */,
-				E1BE32A317D0BA31008265BE /* NostalgiaroidsScene.m in Sources */,
+				E1BE32A317D0BA31008265BE /* Nostalgiaroids.m in Sources */,
 				E1BE32A017D0B796008265BE /* TitleScreenScene.m in Sources */,
 				E1BE327517D0B6B1008265BE /* SmackAppDelegate.m in Sources */,
 				E1A6A3CD192B8F4A00D256AA /* UFO.m in Sources */,
-				FCCC4C371977071A00481D84 /* MoonPatrollerScene.m in Sources */,
-				FCCC4C161975B19F00481D84 /* MainMenuScene.m in Sources */,
+				FCCC4C371977071A00481D84 /* MoonPatroller.m in Sources */,
+				FCCC4C161975B19F00481D84 /* MainMenu.m in Sources */,
 				E1BE327E17D0B6B1008265BE /* SpriteViewController.m in Sources */,
 				E1ED75F51919A6C000FF96F9 /* SKButton.m in Sources */,
 			);

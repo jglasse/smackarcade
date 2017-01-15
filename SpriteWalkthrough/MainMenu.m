@@ -1,17 +1,17 @@
 //
-//  MainMenuScene.m
-//  smackarcade
+//  MainMenu.m
+//  SMACK ARCADE
 //
 //  Created by Jeff Glasse on 7/15/14.
-//  Copyright (c) 2014 Jeffery Glasse. All rights reserved.
+//  Copyright (c) 2017 Jeffery Glasse. All rights reserved.
 //
 
-#import "MainMenuScene.h"
+#import "MainMenu.h"
 #import "SKButton.h"
 #import "TitleScreenScene.h"
-#import "MoonPatrollerScene.h"
+#import "MoonPatroller.h"
 
-@interface MainMenuScene ()
+@interface MainMenu ()
 
 @property BOOL menuCreated;
 @property SKButton* nostalgiaroidsButton;
@@ -22,7 +22,7 @@
 @end
 
 
-@implementation MainMenuScene
+@implementation MainMenu
 
 - (void)didMoveToView:(SKView *)view
 {
@@ -84,9 +84,11 @@
 
 -(void) gotoPatroller
 {
-    SKScene *patrollerScene  = [[MoonPatrollerScene alloc] initWithSize:self.size];
+    SKScene *patrollerScene  = [[MoonPatroller alloc] initWithSize:self.size];
     SKTransition *colorfade = [SKTransition fadeWithColor:[SKColor blackColor] duration:1.25];
+
     [self.view presentScene:patrollerScene transition:colorfade];
+    
 
 }
 

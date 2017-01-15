@@ -1,17 +1,15 @@
 //
-//  SpaceShipScene.m
-//  SpriteWalkthrough
+//  Nostalgiaroids.m
+//  SMACK ARCADE
 //
 //  Created by Jeffery Glasse on 8/30/13.
-//  Copyright (c) 2013 Jeffery Glasse. All rights reserved.
+//  Copyright (c) 2017 Jeffery Glasse. All rights reserved.
 //
 
 @import AVFoundation;
-#import "NostalgiaroidsScene.h"
+#import "Nostalgiaroids.h"
 #import "UFO.h"
 #import "SKButton.h"
-#import "JCRGameControllerManager.h"
-#import "JCRGameController.h"
 
 // set constants
 
@@ -33,7 +31,7 @@ enum{rockhit, death,gameover,ufohit,ufocrash,shotbyufo};
 
 
 
-@interface NostalgiaroidsScene () <JCRGameControllerManagerDelegate,SKPhysicsContactDelegate>
+@interface Nostalgiaroids () <SKPhysicsContactDelegate>
 
 
 
@@ -128,7 +126,7 @@ typedef NS_OPTIONS(NSUInteger, AsteroidsCollionsMask) {
 
 
 
-@implementation NostalgiaroidsScene
+@implementation Nostalgiaroids
 
 #pragma mark - Initialization
 
@@ -1366,7 +1364,7 @@ else
                         @"shock.m4a",
                         @"spoiler.m4a",
                         @"suckateverything.m4a",
-
+                        @"passengers.m4a",
                         @"terriblyugly.m4a",
                         @"thumbs.m4a",
                         @"worstperson.m4a"];
@@ -1513,7 +1511,6 @@ else
 -(void)respawnShip
 {
     CGPoint centerSpot= CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame));
-  //  NSLog(@"centerSpot:%f,%f", CGRectGetMidX(self.frame),CGRectGetMidY(self.frame));
     if ([self areaIsSafeForRespawning: centerSpot])
         {
             self.mySpaceship = [self newSpaceship];
@@ -1531,17 +1528,14 @@ else
     CGFloat acceptableXandYDistance= 160;
     __block bool acceptablXandYDelta= true;
     
-    //NSLog(@"respawn locationx: %.0f,   respawn locationy: %.0f",respawnLocation.x,respawnLocation.y);
 
     
     [self enumerateChildNodesWithName:@"rock" usingBlock:^(SKNode *node, BOOL *stop) {
-     //   NSLog(@"Rockposition: %.0f,%.0f   Delta: %.0f,%.0f",node.position.x, node.position.y,node.position.x-respawnLocation.x,node.position.y-respawnLocation.y);
         
         
         if ((node.position.x-respawnLocation.x<acceptableXandYDistance) & (node.position.x-respawnLocation.x>-acceptableXandYDistance) &(node.position.y-respawnLocation.y<acceptableXandYDistance) & (node.position.y-respawnLocation.y>-acceptableXandYDistance))
         {
             acceptablXandYDelta=false;
-            //NSLog(@"UNACCEPTABLE X AND Y!");
         }
         
 
@@ -1569,7 +1563,6 @@ else
 -(void) fireMissile
 
 {
-    //NSLog(@"maxShots:%d    numberofShotsOnscreen:%d",maxShots, [self numberofShotsOnscreen]);
     
     double timeFiring = [[NSDate date] timeIntervalSince1970];
     

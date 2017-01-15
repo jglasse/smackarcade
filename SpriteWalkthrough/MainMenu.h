@@ -1,14 +1,16 @@
 //
-//  TitleScreen.h
+//  MainMenu.h
 //  SMACK ARCADE
+
 //
-//  Created by Jeffery Glasse on 8/30/13.
+//  Created by Jeff Glasse on 7/15/14.
 //  Copyright (c) 2017 Jeffery Glasse. All rights reserved.
 //
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface TitleScreenScene : SKScene
+@interface MainMenu: SKScene
+
 
 
 @end

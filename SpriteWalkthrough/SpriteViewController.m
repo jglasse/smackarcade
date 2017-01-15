@@ -7,7 +7,9 @@
 //
 
 #import "SpriteViewController.h"
-#import "MainMenuScene.h"
+#import "MainMenu.h"
+#import "Nostalgiaroids.h"
+#import "MoonPatroller.h"
 
 @import SpriteKit;
 
@@ -54,7 +56,8 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    MainMenuScene  * hello = [[MainMenuScene alloc] initWithSize:CGSizeMake(768,1324)];
+    MainMenu  * hello = [[MainMenu alloc] initWithSize:CGSizeMake(768,1324)];
+
     SKView *spriteView = (SKView *) self.view;
     [spriteView presentScene: hello];
     

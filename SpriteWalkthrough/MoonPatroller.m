@@ -1,9 +1,9 @@
 //
 //  MoonPatrollerScene.m
-//  smackarcade
+//  SMACK ARCADE
 //
 //  Created by Jeff Glasse on 7/16/14.
-//  Copyright (c) 2014 Jeffery Glasse. All rights reserved.
+//  Copyright (c) 2017 Jeffery Glasse. All rights reserved.
 //
 
 #define WIDTH(view) view.frame.size.width
@@ -13,10 +13,10 @@
 #define FLOOR_SCROLLING_SPEED 1.5
 
 
-#import "MoonPatrollerScene.h"
+#import "MoonPatroller.h"
 #import "SKScrollingNode.h"
 
-static const uint32_t backBitMask     =  0x1 << 0;
+//static const uint32_t backBitMask     =  0x1 << 0;
 static const uint32_t birdBitMask     =  0x1 << 1;
 static const uint32_t floorBitMask    =  0x1 << 2;
 
@@ -24,7 +24,7 @@ static const uint32_t floorBitMask    =  0x1 << 2;
 
 static const int screenYOffset = 50;
 
-@interface MoonPatrollerScene ()
+@interface MoonPatroller ()
 
 @property (nonatomic)AVAudioPlayer *theBGAudio;
 @property BOOL contentCreated;
@@ -35,7 +35,7 @@ static const int screenYOffset = 50;
 @end
 
 
-@implementation MoonPatrollerScene
+@implementation MoonPatroller
 {
 
     SKScrollingNode * floor;
@@ -215,7 +215,7 @@ static const int screenYOffset = 50;
         [directionNode runAction:moveSequence];
         [subTitleNode runAction:moveSequence];
         [helloNode runAction: moveSequence completion:^{
-            SKScene *mainMenuScene  = [[MainMenuScene alloc] initWithSize:self.size];
+            SKScene *mainMenuScene  = [[MainMenu alloc] initWithSize:self.size];
             SKTransition *doors = [SKTransition doorsOpenVerticalWithDuration:0.25];
             [self.view presentScene:mainMenuScene transition:doors];
         }];    }

@@ -1,5 +1,6 @@
 //SKButtonNode.swift
 //Using contributions from: http://stackoverflow.com/questions/19082202/setting-up-buttons-in-skscene
+// updated to swift 3  by Jeff Glasse
 
 import Foundation
 import SpriteKit
