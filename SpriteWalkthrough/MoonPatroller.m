@@ -171,7 +171,7 @@ static const int screenYOffset = 50;
 - (SKLabelNode *)newDirectionNode
 {
     SKLabelNode *directionNode = [SKLabelNode labelNodeWithFontNamed:@"PressStart2P"];
-    directionNode.text = @"Coming Soon!";
+    directionNode.text = @"Coming Some Day(?)";
     directionNode.fontSize = 25;
     directionNode.fontColor = [SKColor redColor];
     directionNode.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame)-190+screenYOffset);
