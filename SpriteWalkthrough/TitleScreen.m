@@ -21,8 +21,7 @@ static const int screenYOffset = 50;
 @implementation TitleScreen
 
 
-- (void)didMoveToView: (SKView *) view
-{
+- (void)didMoveToView: (SKView *) view {
     if (!self.contentCreated)
     {
         [self createSceneContents];
@@ -37,8 +36,7 @@ static const int screenYOffset = 50;
 }
 
 
-- (void)createSceneContents
-{
+- (void)createSceneContents {
     self.backgroundColor = [SKColor blackColor];
     self.scaleMode = SKSceneScaleModeAspectFit;
     [self addChild: [self newHelloNode]];
@@ -47,26 +45,22 @@ static const int screenYOffset = 50;
     SKLabelNode *directionNode =[self newDirectionNode];
     [self addChild: directionNode];
     
+    
     SKAction *blinkSequence = [SKAction sequence:@[
                                                    [SKAction fadeAlphaTo:1.0 duration:0.1],
                                                    [SKAction waitForDuration:.75],
                                                    [SKAction fadeAlphaTo:0.0 duration:0.1],
                                                    [SKAction waitForDuration:.75]
                                                    ]];
-    
-    
     [directionNode runAction:[SKAction repeatActionForever:blinkSequence ]];
-    
-    
-    
+   
 }
 
 
 
 
 
-- (void)touchesBegan:(NSSet *) touches withEvent:(UIEvent *)event
-{
+- (void)touchesBegan:(NSSet *) touches withEvent:(UIEvent *)event {
     SKNode *helloNode = [self childNodeWithName:@"helloNode"];
     SKNode *subTitleNode = [self childNodeWithName:@"subtitleNode"];
     SKNode *directionNode = [self childNodeWithName:@"directionNode"];
@@ -92,8 +86,7 @@ static const int screenYOffset = 50;
     
 }
 
-- (SKLabelNode *)newHelloNode
-{
+- (SKLabelNode *)newHelloNode {
     SKLabelNode *helloNode = [SKLabelNode labelNodeWithFontNamed:@"Hyperspace"];
     helloNode.text = @"Smack Arcade presents ";
     helloNode.fontSize = 50;
@@ -103,8 +96,7 @@ static const int screenYOffset = 50;
     return helloNode;
 }
 
-- (SKLabelNode *)newSubtitleNode
-{
+- (SKLabelNode *)newSubtitleNode {
     SKLabelNode *subtitleNode = [SKLabelNode labelNodeWithFontNamed:@"Hyperspace"];
     subtitleNode.text = @"Nostalgiaroids!";
     subtitleNode.fontSize = 70;
@@ -114,18 +106,18 @@ static const int screenYOffset = 50;
     return subtitleNode;
 }
 
-- (SKLabelNode *)newDirectionNode
-{
+- (SKLabelNode *)newDirectionNode {
     SKLabelNode *directionNode = [SKLabelNode labelNodeWithFontNamed:@"Hyperspace"];
     directionNode.text = @"Tap screen to begin";
     directionNode.fontSize = 45;
     directionNode.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame)-190+screenYOffset);
     directionNode.name = @"directionNode";
-    directionNode.alpha = 0.0;
+    directionNode.alpha = 1.0;
 
     
     return directionNode;
 }
+
 
 
 

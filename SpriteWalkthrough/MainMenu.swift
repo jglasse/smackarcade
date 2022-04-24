@@ -20,12 +20,14 @@ class MainMenu: SKScene {
 }
 
 
-func createSceneContents()
+func createSceneContents(){}
 
 
 
 
-func createBackgroundStarfield()
+func createBackgroundStarfield(){
+    
+}
 
 var emitterNode = starfieldEmitter(SKColor.lightGray, starSpeedY: 50, starsPerSecond: 1, starScaleFactor: 0.2)
 emitterNode.zPosition = -10

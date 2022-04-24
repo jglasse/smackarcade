@@ -52,12 +52,14 @@
 
 - (void)makeMenu
 {
-    
+
     self.menuCreated = YES;
     [self startBGMusic];
-    
     self.backgroundColor = [SKColor blackColor];
     self.scaleMode = SKSceneScaleModeAspectFit;
+   
+    [self addChild: [self newEmitterNode]];
+
     
     _titleNode = [SKSpriteNode spriteNodeWithImageNamed:@"mainmenutitle"];
     _titleNode.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMaxY(self.frame)-100);
@@ -105,5 +107,13 @@
     
     return button;
 }
+
+- (SKEmitterNode *)newEmitterNode {
+    SKEmitterNode *emitterNode = [SKEmitterNode nodeWithFileNamed:@"titleStars"];
+    emitterNode.position =   CGPointMake(CGRectGetMidX(self.frame),0);
+    [emitterNode advanceSimulationTime:200];
+    return emitterNode;
+}
+
 
 @end
