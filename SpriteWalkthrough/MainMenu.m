@@ -110,7 +110,7 @@
 
 - (SKEmitterNode *)newEmitterNode {
     SKEmitterNode *emitterNode = [SKEmitterNode nodeWithFileNamed:@"titleStars"];
-    emitterNode.position =   CGPointMake(CGRectGetMidX(self.frame),0);
+    emitterNode.position =   CGPointMake(CGRectGetMidX(self.frame),CGRectGetMaxY(self.frame));
     [emitterNode advanceSimulationTime:200];
     return emitterNode;
 }
