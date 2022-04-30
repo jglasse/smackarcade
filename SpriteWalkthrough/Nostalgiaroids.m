@@ -82,7 +82,7 @@ enum{rockhit, death,gameover,ufohit,ufocrash,shotbyufo};
 @property SKSpriteNode *leftButton;
 @property SKSpriteNode *rightButton;
 @property SKSpriteNode *thrustButton;
-@property SKSpriteNode *settingsButton;
+@property SKSpriteNode *pauseButton;
 @property SKSpriteNode *hyperspaceButton;
 @property SKButton *fireButton;
 
@@ -214,98 +214,12 @@ typedef NS_OPTIONS(NSUInteger, AsteroidsCollionsMask) {
     
 }
 
-/*
 
-- (void)gameControllerManager:(JCRGameControllerManager *)manager
-      gameControllerConnected:(JCRGameController *)gameController {
-    
-    NSInteger playerIndex = [[gameController controller] playerIndex];
-    [self __logMessage:[NSString stringWithFormat:@"+ Gamecontroller connected with index: %ld", (long)playerIndex]];
-    [ self runAction:_controllerConnected];
-    [self hideButtons];
-
-    
-    [gameController setPauseButtonBlock:^(GCController *controller) {
-        [self pauseGame];
-    }];
-    
-    [gameController setAButtonBlock:^(GCControllerButtonInput *button, float value, BOOL pressed) {
-        [self __logMessage:@"A"];
-        if (pressed) [self fire]; else [self endFire];
-    }];
-    
-    [gameController setBButtonBlock:^(GCControllerButtonInput *button, float value, BOOL pressed) {
-        [self __logMessage:@"B"];
-        if (pressed) [self thrust]; else [self endThrust];
-    }];
-    
-    [gameController setXButtonBlock:^(GCControllerButtonInput *button, float value, BOOL pressed) {
-        [self __logMessage:@"X"];
-        [self hyper];
-    }];
-    
-    [gameController setYButtonBlock:^(GCControllerButtonInput *button, float value, BOOL pressed) {
-        [self __logMessage:@"Y"];
-    }];
-    
-    [gameController setLeftShoulderButtonBlock:^(GCControllerButtonInput *button, float value, BOOL pressed) {
-        [self __logMessage:@"Left shoulder"];
-        if (pressed) [self fire]; else [self endFire];
-        
-    }];
-    
-    [gameController setRightShoulderButtonBlock:^(GCControllerButtonInput *button, float value, BOOL pressed) {
-        [self __logMessage:@"Right shoulder"];
-        if (pressed) [self fire]; else [self endFire];
-    }];
-    
-    [gameController setLeftTriggerButtonBlock:^(GCControllerButtonInput *button, float value, BOOL pressed) {
-        [self __logMessage:@"Left trigger"];
-        if (pressed) [self fire]; else [self endFire];
-    }];
-    
-    [gameController setRightTriggerButtonBlock:^(GCControllerButtonInput *button, float value, BOOL pressed) {
-        [self __logMessage:@"Right trigger"];
-        if (pressed) [self fire]; else [self endFire];
-    }];
-    
-    [gameController setLeftThumbstickBlock:^(GCControllerDirectionPad *dpad, float xValue, float yValue) {
-        [self __logMessage:[NSString stringWithFormat:@"Left Thumbstick -- X: %f || F: %f", xValue, yValue]];
-    }];
-    
-    [gameController setRightThumbstickBlock:^(GCControllerDirectionPad *dpad, float xValue, float yValue) {
-        [self __logMessage:[NSString stringWithFormat:@"Right Thumbstick -- X: %f || F: %f", xValue, yValue]];
-    }];
-    
-    [gameController setDPadBlock:^(GCControllerDirectionPad *dpad, float xValue, float yValue) {
-        [self __logMessage:[NSString stringWithFormat:@"Dpad -- X: %f || F: %f", xValue, yValue]];
-        if (xValue < 0)
-            [self left];
-        else
-            if (xValue >0)
-            [self right];
-            else {
-                [self endLeft];
-                [self endRight];
-            }
-        
-    }];
-}
-
-- (void)gameControllerManagerGameControllerDisconnected:(JCRGameControllerManager *)manager {
-    [self runAction:_controllerDisconnected];
-    [self showButtons];
-
-}
-*/
-
-- (void)__logMessage:(NSString*)message {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        NSLog(@"%@",message);
-    });
-}
-
-
+//- (void)__logMessage:(NSString*)message {
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        NSLog(@"%@",message);
+//    });
+//}
 
 
 -(void)configureSoundAssetActions
@@ -564,9 +478,9 @@ typedef NS_OPTIONS(NSUInteger, AsteroidsCollionsMask) {
     _leftButton=[self makeButtonWithImageNamed:@"left" DownAction:@"left" UpAction:@"endLeft" atPosition:CGPointMake(CGRectGetMidX(self.frame)-270, 80)];
     _rightButton=[self makeButtonWithImageNamed:@"right" DownAction:@"right" UpAction:@"endRight" atPosition:CGPointMake(CGRectGetMidX(self.frame)+270, 80)];
     _hyperspaceButton=[self makeButtonWithImageNamed:@"hyperspace" DownAction:@"hyper" UpAction:@"endHyper" atPosition:CGPointMake(CGRectGetMidX(self.frame), 180)];
-    _settingsButton=[self makeButtonWithImageNamed:@"pause" DownAction:@"settings" UpAction:@"endSettings" atPosition: CGPointMake(CGRectGetMidX(self.frame)+300, 1250)];
-    _settingsButton.xScale=.750;
-    _settingsButton.yScale=.750;
+    _pauseButton=[self makeButtonWithImageNamed:@"pause" DownAction:@"pauseGame" UpAction:@"doNothing" atPosition: CGPointMake(CGRectGetMidX(self.frame)+300, 1250)];
+    _pauseButton.xScale=.750;
+    _pauseButton.yScale=.750;
     
 }
 
@@ -591,7 +505,7 @@ typedef NS_OPTIONS(NSUInteger, AsteroidsCollionsMask) {
     _leftButton.alpha=0;
     _rightButton.alpha=0;
     _hyperspaceButton.alpha=0;
-    _settingsButton.alpha=0;
+    _pauseButton.alpha=0;
     
 }
 
@@ -602,7 +516,7 @@ typedef NS_OPTIONS(NSUInteger, AsteroidsCollionsMask) {
     _leftButton.alpha=1;
     _rightButton.alpha=1;
     _hyperspaceButton.alpha=1;
-    _settingsButton.alpha=1;
+    _pauseButton.alpha=1;
     
 }
 
@@ -987,6 +901,8 @@ else
 
     NSString *myParticlePath = [[NSBundle mainBundle] pathForResource:@"ExplosionParticle" ofType:@"sks"];
     SKEmitterNode *explosionEmitter = [NSKeyedUnarchiver unarchiveObjectWithFile:myParticlePath];
+   
+   
     explosionEmitter.particlePosition= explosionLocation;
     [self addChild:explosionEmitter];
 
@@ -1431,7 +1347,7 @@ else
         
     SKAction *insultSound =  [ SKAction playSoundFileNamed:[_smacknames objectAtIndex:rnd] waitForCompletion: YES];
         lastSmack=[_smacknames objectAtIndex:rnd];
-    [self runAction: insultSound completion:^{ _insult_playing=false; }];
+        [self runAction: insultSound completion:^{ self->_insult_playing=false; }];
     }
     
 }
@@ -1442,8 +1358,7 @@ else
 
 
 
-- (NSArray *)rocknames
-{
+- (NSArray *)rocknames {
     static NSArray *_rocknames;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -1454,7 +1369,6 @@ else
                     @"bigrock_5"];
     });
     return _rocknames;
-    
 }
 
 - (NSArray *)mediumRocknames
@@ -1472,8 +1386,7 @@ else
     
 }
 
-- (NSArray *)smallRocknames
-{
+- (NSArray *)smallRocknames{
     static NSArray *_rocknames;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -1484,33 +1397,22 @@ else
                        @"smallrock_5"];
     });
     return _rocknames;
-    
 }
 
 
--(void)gameOver
-{
-
+-(void)gameOver {
      [self stopBGSounds];
-   
     [self smack:gameover];
-
-    
     _gameOverNode=[self newGameOverNode];
     _restartGameButton = [SKSpriteNode spriteNodeWithImageNamed:@"restart.png"];
     _restartGameButton.name=@"restart";
     _restartGameButton.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame)-100);
-
-    
     [self addChild: _gameOverNode ];
     [self addChild:_restartGameButton];
-
 }
 
 
-
--(void)respawnShip
-{
+-(void)respawnShip {
     CGPoint centerSpot= CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame));
     if ([self areaIsSafeForRespawning: centerSpot])
         {
@@ -1520,12 +1422,9 @@ else
             [self addChild:  self.mySpaceship];
         
         }
-    
-    
 }
 
--(BOOL)areaIsSafeForRespawning: (CGPoint) respawnLocation
-{
+-(BOOL)areaIsSafeForRespawning: (CGPoint) respawnLocation {
     CGFloat acceptableXandYDistance= 160;
     __block bool acceptablXandYDelta= true;
     
@@ -1550,8 +1449,7 @@ else
 }
 
 
--(void)makeExplosion: (CGPoint) boomLocation
-{
+-(void)makeExplosion: (CGPoint) boomLocation {
     SKSpriteNode *particle = [SKSpriteNode spriteNodeWithColor:[SKColor whiteColor] size:CGSizeMake( 2, 2 ) ];
     particle.name=@"missile";
     
@@ -1561,9 +1459,7 @@ else
 
 
 
--(void) fireMissile
-
-{
+-(void) fireMissile {
     
     double timeFiring = [[NSDate date] timeIntervalSince1970];
     
@@ -1611,8 +1507,7 @@ else
 
 
 
--(void)UFOdecideToFireOrMove
-{
+-(void)UFOdecideToFireOrMove {
     
     if (_myUFO.timeOnScreen % 60==0)
         [self fireUFOMissile];
@@ -1623,9 +1518,7 @@ else
 }
 
 
--(void) fireUFOMissile
-
-{
+-(void) fireUFOMissile {
     [self runAction: self.pewSound];
     SKSpriteNode *missile = [SKSpriteNode spriteNodeWithColor:[SKColor whiteColor] size:CGSizeMake( 3, 3 ) ];
     missile.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:missile.size];
@@ -1659,66 +1552,40 @@ else
     
 }
 
--(void) updateMass: (int) amount
-{
-    
+-(void) updateMass: (int) amount {
     _rockMassOnScreen=_rockMassOnScreen+amount;
-    
-    
 }
 
-- (int)numberofShotsOnscreen
-{
+- (int)numberofShotsOnscreen{
     __block int numberOfShots = 0;
   [self enumerateChildNodesWithName:@"missile" usingBlock:^(SKNode *node, BOOL *stop) {
-      
       numberOfShots++;
   }];
-    
     return numberOfShots;
-
-
 }
 
 
-- (void) removeMissileAfterDelay: (SKSpriteNode*) missile
-
-{
+- (void) removeMissileAfterDelay: (SKSpriteNode*) missile {
     SKAction *wait = [SKAction waitForDuration: .75];
     SKAction *removeNode = [SKAction removeFromParent];
     SKAction *sequence = [SKAction sequence:@[wait, removeNode]];
     [missile runAction:sequence];
-    
-   
-    
 }
 
 
-- (void) removeMissile: (SKSpriteNode*) missile
-
-{
+- (void) removeMissile: (SKSpriteNode*) missile {
     [missile removeFromParent];
-
-    
-    
-    
-    
-    
 }
 
--(void) stopBGSounds
-{
+-(void) stopBGSounds {
     [self.theBGAudio stop];
     [self.theBGAudioFaster stop];
     [self.theBGAudioFastest stop];
     if (_myUFO.alive) [_myUFO pauseUFOSound];
-    
-
 }
 
 
--(void) pauseGame
-{
+-(void) pauseGame {
     if ((int)_pausedNode.alpha==0)
     {
     _pausedNode.alpha=1;
@@ -1735,7 +1602,6 @@ else
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, .05 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
         self.scene.view.paused = !self.scene.view.paused;
     });
-
 }
 
 
@@ -1749,10 +1615,6 @@ else
     });
     
 }
-
-
-
-
 
 #pragma mark - Touch Control
 
@@ -1820,10 +1682,8 @@ else
 
 
 
--(void)hyper
-{
+-(void)hyper {
     static BOOL hypering;
-    
     if (!hypering)
     {
         hypering=TRUE;
@@ -1837,68 +1697,41 @@ else
             hypering = false;
         });
     }
-    
 }
 
--(void)endHyper
-{
-    
-    
+-(void)endHyper {
     
 }
 
 
--(void)settings
-{
-    [self pauseGame];
-   
-}
--(void)endSettings
-{
+
+-(void)doNothing {
     
 }
 
 
 
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInNode:self];
     SKNode *node = [self nodeAtPoint:location];
-    
-        if  ([node.name isEqualToString:@"restart"])
-    
-    {
+    if  ([node.name isEqualToString:@"restart"]) {
         [self resetGame];
-        
-    
     }
-    
-    
-    
-    
 }
 
 
 
 
--(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
-
-{
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
 
 }
 
 
--(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
-{
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
 
 }
-
-
-
-
 
 
 #pragma mark - Random Number generator for random Rock generation
@@ -1911,17 +1744,5 @@ static inline CGFloat skRandf() {
 static inline CGFloat skRand(CGFloat low, CGFloat high) {
     return skRandf() * (high - low) + low;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 @end

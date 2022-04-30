@@ -40,8 +40,6 @@
 		E1BE328017D0B6B1008265BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1BE327F17D0B6B1008265BE /* Images.xcassets */; };
 		E1BE328817D0B6B1008265BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BE326417D0B6B1008265BE /* Foundation.framework */; };
 		E1BE328917D0B6B1008265BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BE326817D0B6B1008265BE /* UIKit.framework */; };
-		E1BE329117D0B6B1008265BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1BE328F17D0B6B1008265BE /* InfoPlist.strings */; };
-		E1BE329317D0B6B1008265BE /* SmackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BE329217D0B6B1008265BE /* SmackTests.m */; };
 		E1BE329D17D0B6C8008265BE /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BE329C17D0B6C8008265BE /* SpriteKit.framework */; };
 		E1BE32A017D0B796008265BE /* TitleScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BE329F17D0B796008265BE /* TitleScreen.m */; };
 		E1BE32A317D0BA31008265BE /* Nostalgiaroids.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BE32A217D0BA31008265BE /* Nostalgiaroids.m */; };
@@ -324,9 +322,6 @@
 		E1BE327C17D0B6B1008265BE /* SpriteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpriteViewController.h; sourceTree = "<group>"; };
 		E1BE327D17D0B6B1008265BE /* SpriteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteViewController.m; sourceTree = "<group>"; };
 		E1BE327F17D0B6B1008265BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E1BE328E17D0B6B1008265BE /* Smack ArcadeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Smack ArcadeTests-Info.plist"; sourceTree = "<group>"; };
-		E1BE329017D0B6B1008265BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E1BE329217D0B6B1008265BE /* SmackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmackTests.m; sourceTree = "<group>"; };
 		E1BE329C17D0B6C8008265BE /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		E1BE329E17D0B796008265BE /* TitleScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleScreen.h; sourceTree = "<group>"; };
 		E1BE329F17D0B796008265BE /* TitleScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleScreen.m; sourceTree = "<group>"; };
@@ -571,7 +566,6 @@
 			children = (
 				FCCC4C131975B16D00481D84 /* scenes */,
 				FCCC4C1219756B3300481D84 /* Classes */,
-				E1BE328C17D0B6B1008265BE /* Tests */,
 				E13F5B5417D91B90005DD66F /* View Controllers&App Delegate */,
 				E1BE326B17D0B6B1008265BE /* Supporting Files */,
 			);
@@ -587,25 +581,6 @@
 				E1BE326C17D0B6B1008265BE /* Smack Arcade-Info.plist */,
 				E1BE326D17D0B6B1008265BE /* InfoPlist.strings */,
 				E1BE327017D0B6B1008265BE /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E1BE328C17D0B6B1008265BE /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				E1BE329217D0B6B1008265BE /* SmackTests.m */,
-				E1BE328D17D0B6B1008265BE /* Supporting Files */,
-			);
-			name = Tests;
-			path = SpriteWalkthroughTests;
-			sourceTree = SOURCE_ROOT;
-		};
-		E1BE328D17D0B6B1008265BE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E1BE328E17D0B6B1008265BE /* Smack ArcadeTests-Info.plist */,
-				E1BE328F17D0B6B1008265BE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1246,7 +1221,6 @@
 				FCD64DDF1B13E73200C31F27 /* boohoo.m4a in Resources */,
 				FCD64DAA1B13E30400C31F27 /* patroller_buttonPressed.png in Resources */,
 				FCD64E8E1B13EBAE00C31F27 /* flyinto.m4a in Resources */,
-				E1BE329117D0B6B1008265BE /* InfoPlist.strings in Resources */,
 				FCD64EA21B13EDD900C31F27 /* diz.m4a in Resources */,
 				FCD64E201B13EA1F00C31F27 /* insecurity.m4a in Resources */,
 				FCD64DDB1B13E73200C31F27 /* actualrocks.m4a in Resources */,
@@ -1297,7 +1271,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1BE329317D0B6B1008265BE /* SmackTests.m in Sources */,
 				E1ED75F61919A6C000FF96F9 /* SKButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1327,14 +1300,6 @@
 				E1BE327A17D0B6B1008265BE /* Base */,
 			);
 			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		E1BE328F17D0B6B1008265BE /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E1BE329017D0B6B1008265BE /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		FC393AEF1A2FBAC900DD2A2C /* Main_iPhone.storyboard */ = {

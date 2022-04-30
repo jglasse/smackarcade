@@ -12,7 +12,6 @@
 #import "MoonPatroller.h"
 
 @interface MainMenu ()
-
 @property BOOL menuCreated;
 @property SKButton* nostalgiaroidsButton;
 @property SKButton* moonBuggyButton;
@@ -24,29 +23,22 @@
 
 @implementation MainMenu
 
-- (void)didMoveToView:(SKView *)view
-{
-    if (!self.menuCreated)
-    {
+- (void)didMoveToView:(SKView *)view {
+    if (!self.menuCreated) {
         [self makeMenu];
-        
     }
-    
-    
 }
 
 
--(void)startBGMusic
-{
+-(void)startBGMusic{
     NSError *error;
     NSString *path = [[NSBundle mainBundle] pathForResource:@"diz" ofType:@"m4a"];
     self.BGMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:&error];
     path = [[NSBundle mainBundle] pathForResource:@"diz" ofType:@"m4a"];
-    self.BGMusic.numberOfLoops=1;
+    self.BGMusic.numberOfLoops=-1;
     self.BGMusic.volume=.2;
     [self.BGMusic prepareToPlay];
     [self.BGMusic play];
-    
 }
 
 
@@ -84,18 +76,14 @@
 }
 
 
--(void) gotoPatroller
-{
+-(void) gotoPatroller {
     SKScene *patrollerScene  = [[MoonPatroller alloc] initWithSize:self.size];
     SKTransition *colorfade = [SKTransition fadeWithColor:[SKColor blackColor] duration:1.25];
 
     [self.view presentScene:patrollerScene transition:colorfade];
-    
-
 }
 
--(SKButton *)makeButtonWithImageNamed:(NSString*)buttonImage DownAction:(NSString*) action UpAction:(NSString*) endAction atPosition:(CGPoint)buttonPosition
-{
+-(SKButton *)makeButtonWithImageNamed:(NSString*)buttonImage DownAction:(NSString*) action UpAction:(NSString*) endAction atPosition:(CGPoint)buttonPosition {
     NSString *buttonPress= [buttonImage stringByAppendingString:@"Pressed"];
     SKButton *button = [[SKButton alloc] initWithImageNamedNormal:buttonImage selected:buttonPress];
     [button setTouchUpInsideTarget:self action:NSSelectorFromString(endAction)];
@@ -114,6 +102,11 @@
     [emitterNode advanceSimulationTime:200];
     return emitterNode;
 }
-
+-(void)update:(NSTimeInterval)currentTime {
+    if (!self.BGMusic.playing) {
+        [self startBGMusic];
+        NSLog(@"startBGMusic");
+    }
+}
 
 @end

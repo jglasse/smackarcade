@@ -45,65 +45,47 @@ static const int screenYOffset = 50;
 }
 
 
-- (void)didMoveToView: (SKView *) view
-{
+- (void)didMoveToView: (SKView *) view {
     if (!self.contentCreated)
     {
         [self createSceneContents];
-        
         self.contentCreated = YES;
     }
 }
 
 
-- (void)createSceneContents
-{
+- (void)createSceneContents {
     self.backgroundColor = [SKColor blackColor];
     self.scaleMode = SKSceneScaleModeAspectFit;
     [self addChild: [self newHelloNode]];
     [self addChild: [self newSubtitleNode]];
     SKLabelNode *directionNode =[self newDirectionNode];
     [self addChild: directionNode];
-    
-    
     [self createBackground];
     [self createBackground2];
-    
     [self createFloor];
-
-    
-    
     [self startBGSound];
-    
-    
-   SKAction *blinkSequence = [SKAction sequence:@[
+    SKAction *blinkSequence = [SKAction sequence:@[
                                                    [SKAction fadeAlphaTo:1.0 duration:0.1],
                                                    [SKAction waitForDuration:.75],
                                                    [SKAction fadeAlphaTo:0.0 duration:0.1],
                                                    [SKAction waitForDuration:.75]
                                                    ]];
    [directionNode runAction:[SKAction repeatActionForever:blinkSequence ]];
-    
-    
 }
 
-- (void) createBackground
-{
+- (void) createBackground {
     back = [SKScrollingNode scrollingNodeWithImageNamed:@"MPfarbg1" inContainerWidth:WIDTH(self)];
     [back setScrollingSpeed:BACK_SCROLLING_SPEED];
     [back setAnchorPoint:CGPointZero];
     [back setPhysicsBody:[SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame]];
     back.physicsBody.categoryBitMask = 0;
     back.physicsBody.contactTestBitMask = 0;
-    
-    
     [self addChild:back];
-    
 }
 
 
-- (void) createBackground2
-{
+- (void) createBackground2 {
     back2 = [SKScrollingNode scrollingNodeWithImageNamed:@"MPclosebg" inContainerWidth:WIDTH(self)];
     [back2 setScrollingSpeed:BACK2_SCROLLING_SPEED];
     [back2 setAnchorPoint:CGPointZero];
@@ -111,11 +93,9 @@ static const int screenYOffset = 50;
     back2.physicsBody.categoryBitMask = 0;
     back2.physicsBody.contactTestBitMask = 0;
     [self addChild:back2];
-    
 }
 
-- (void)createFloor
-{
+- (void)createFloor {
     floor = [SKScrollingNode scrollingNodeWithImageNamed:@"floor2" inContainerWidth:WIDTH(self)];
     [floor setScrollingSpeed:FLOOR_SCROLLING_SPEED];
     [floor setAnchorPoint:CGPointZero];
@@ -127,83 +107,59 @@ static const int screenYOffset = 50;
 }
 
 
--(void)startBGSound
-
-{
+-(void)startBGSound {
     NSError *error;
     NSString *path = [[NSBundle mainBundle] pathForResource:@"moonpatrol" ofType:@"aif"];
     self.theBGAudio = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:&error];
-    
-    
     self.theBGAudio.numberOfLoops=-1;
     self.theBGAudio.volume=.5;
     [self.theBGAudio prepareToPlay];
     [self.theBGAudio play];
-    
 }
 
 
 
-- (SKLabelNode *)newHelloNode
-{
+- (SKLabelNode *)newHelloNode {
     SKLabelNode *helloNode = [SKLabelNode labelNodeWithFontNamed:@"PressStart2P"];
     helloNode.text = @"Smack Arcade presents ";
     helloNode.fontSize = 30;
     helloNode.fontColor = [SKColor blueColor];
     helloNode.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame)+screenYOffset);
     helloNode.name = @"helloNode";
-    
     return helloNode;
 }
 
-- (SKLabelNode *)newSubtitleNode
-{
+- (SKLabelNode *)newSubtitleNode {
     SKLabelNode *subtitleNode = [SKLabelNode labelNodeWithFontNamed:@"PressStart2P"];
     subtitleNode.text = @"Moon Patroller!";
     subtitleNode.fontColor = [SKColor blueColor];
     subtitleNode.fontSize = 50;
     subtitleNode.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame)-70+screenYOffset);
     subtitleNode.name = @"subtitleNode";
-    
     return subtitleNode;
 }
 
-- (SKLabelNode *)newDirectionNode
-{
+- (SKLabelNode *)newDirectionNode {
     SKLabelNode *directionNode = [SKLabelNode labelNodeWithFontNamed:@"PressStart2P"];
     directionNode.text = @"Coming Some Day(?)";
     directionNode.fontSize = 25;
     directionNode.fontColor = [SKColor redColor];
     directionNode.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame)-190+screenYOffset);
     directionNode.name = @"directionNode";
-    
-    
     return directionNode;
 }
 
-- (void)update:(NSTimeInterval)currentTime
-{
- 
-    
+- (void)update:(NSTimeInterval)currentTime {
     [back update:currentTime];
     [back2 update:currentTime];
- 
-    
-    
-    
-    
     [floor update:currentTime];
-    
  }
 
 
-- (void)touchesBegan:(NSSet *) touches withEvent:(UIEvent *)event
-{
+- (void)touchesBegan:(NSSet *) touches withEvent:(UIEvent *)event {
     SKNode *helloNode = [self childNodeWithName:@"helloNode"];
     SKNode *subTitleNode = [self childNodeWithName:@"subtitleNode"];
     SKNode *directionNode = [self childNodeWithName:@"directionNode"];
-    
-    
     if (helloNode != nil)
     {
         helloNode.name = nil;
@@ -219,7 +175,6 @@ static const int screenYOffset = 50;
             SKTransition *doors = [SKTransition doorsOpenVerticalWithDuration:0.25];
             [self.view presentScene:mainMenuScene transition:doors];
         }];    }
-    
 }
 
 
