@@ -32,10 +32,7 @@
 
 
 
--(void)stateHandler {
-    
-    
-}
+
 
 
 
