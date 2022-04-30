@@ -774,7 +774,7 @@ else
     SKAction *wait = [SKAction waitForDuration: 2];
     [self runAction:wait completion:^{
         [self nextLevel];
-        _transitioningToNextLevel=false;
+        self.transitioningToNextLevel=false;
     }];
     
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		60F2F9AB2814BCEC00AEE700 /* titleStars.sks in Resources */ = {isa = PBXBuildFile; fileRef = 60F2F9A92814BCEC00AEE700 /* titleStars.sks */; };
 		60F2F9AC2814BCEC00AEE700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60F2F9AA2814BCEC00AEE700 /* Assets.xcassets */; };
+		6BD8CB33281DA7B50071B9A4 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1BE327917D0B6B1008265BE /* Main_iPad.storyboard */; };
 		E12F41691929175E0054E22E /* explosion.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E12F41681929175E0054E22E /* explosion.atlas */; };
 		E14182B81E2AE5910034F0F5 /* lowtonehightone.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DB31B13E32A00C31F27 /* lowtonehightone.m4a */; };
 		E14182B91E2AE5940034F0F5 /* lowtonehightone_medium.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FCD64DB51B13E32A00C31F27 /* lowtonehightone_medium.m4a */; };
@@ -977,6 +978,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BD8CB33281DA7B50071B9A4 /* Main_iPad.storyboard in Resources */,
 				FCD64E771B13EB5F00C31F27 /* diplomat.m4a in Resources */,
 				E1BAF26A1E298BCE00DFF3AD /* explosion2.m4a in Resources */,
 				E14182BF1E2AE7810034F0F5 /* thrust2.m4a in Resources */,
