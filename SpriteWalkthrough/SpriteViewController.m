@@ -56,6 +56,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
     MainMenu  * hello = [[MainMenu alloc] initWithSize:CGSizeMake(768,1324)];
 
     SKView *spriteView = (SKView *) self.view;

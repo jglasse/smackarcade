@@ -34,7 +34,7 @@
     NSError *error;
     NSString *path = [[NSBundle mainBundle] pathForResource:@"diz" ofType:@"m4a"];
     self.BGMusic = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:&error];
-    path = [[NSBundle mainBundle] pathForResource:@"diz" ofType:@"m4a"];
+    //path = [[NSBundle mainBundle] pathForResource:@"diz" ofType:@"m4a"];
     self.BGMusic.numberOfLoops=-1;
     self.BGMusic.volume=.2;
     [self.BGMusic prepareToPlay];
